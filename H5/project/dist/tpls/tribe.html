@@ -1,0 +1,45 @@
+<div class="swiper-container tribe-lunbo">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide" ng-repeat="tribeimg in tribe.tribeimgs">
+            <img src="{{tribeimg.img}}">
+        </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<div class="tribe-list container">
+    <ol class="yiku" infinite-scroll='tribe.nextPage()' infinite-scroll-disabled='tribe.busy' infinite-scroll-distance='1'>
+            <li class="clearfix go-tribe" data-tribeid="{{tribe.id}}" ng-repeat="tribe in tribe.items">
+                <!--跳转部落之心-->
+                <a>
+                    <div class="tribe-list-l pull-left tribe-no{{tribe.no}}">
+                        NO.<span class="big">1</span>
+                    </div>
+                    <div class="tribe-list-c pull-left">
+                        <img src="http://pocketuniv.com/data/upthumb/2015/1230/16/56838f882c68d_125x125f.jpg">
+                    </div>
+                    <div class="tribe-list-c2 pull-left">
+                        <p class="tribe-list-hobbies">{{tribe.hobbies}}</p>
+
+                        <p class="tribe-list-name">{{tribe.name}}</p>
+
+                        <p class="tribe-list-school"><span class="glyphicon glyphicon-home">&emsp13;</span>{{tribe.school}}
+                            <span class="glyphicon glyphicon-user">&emsp13;</span>{{tribe.counts}}</p>
+                    </div>
+                    <div class="tribe-list-r  pull-right">
+                        <span>{{tribe.point}}分</span></div>
+                </a>
+            </li>
+    </ol>
+</div>
+<script>
+    var mySwiper = new Swiper('.tribe-lunbo', {
+        direction: 'horizontal',
+        autoplay: 5000,
+//        // 如果需要分页器
+        pagination: '.swiper-pagination'
+
+    })
+</script>

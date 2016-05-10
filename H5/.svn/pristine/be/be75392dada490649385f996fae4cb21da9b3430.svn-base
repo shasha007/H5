@@ -1,0 +1,668 @@
+<header class="event-header  clearfix">
+    <div class="container">
+        <div class="pull-left text-left">
+            榜单榜单榜单榜单榜单榜单榜单榜单榜单榜单榜单榜单
+            榜单榜单榜单榜单榜单榜单榜单榜单榜单榜单榜单榜单
+        </div>
+        <div class="pull-right text-right">
+            切换学校
+            <span class="arrow"></span>
+        </div>
+    </div>
+</header>
+<div>
+    <ul class="weektribe-lb">
+        <li>
+            <header class="container clearfix">
+                <p>学生部门本周排行</p>
+                <p>全部</p>
+            </header>
+            <!--热门活动图片轮播-->
+            <div class="swiper-container week-lunbo-1 clearfix">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container dis-event-lun">
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container dis-event-lun">
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container dis-event-lun">
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </li>
+
+        <li>
+            <header class="container clearfix">
+                <p>团支部本周排行</p>
+                <p>全部</p>
+            </header>
+            <!--热门活动图片轮播-->
+            <div class="swiper-container week-lunbo-2 clearfix">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container dis-event-lun">
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container dis-event-lun">
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container dis-event-lun">
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </li>
+        <li>
+            <header class="container clearfix">
+                <p>社团本周排行-文艺类</p>
+                <p>全部</p>
+            </header>
+            <!--热门活动图片轮播-->
+            <div class="swiper-container week-lunbo-3 clearfix">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container dis-event-lun">
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container dis-event-lun">
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container dis-event-lun">
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </li>
+        <li>
+            <header class="container clearfix">
+                <p>社团本周排行-文艺类</p>
+                <p>全部</p>
+            </header>
+            <!--热门活动图片轮播-->
+            <div class="swiper-container week-lunbo-4 clearfix">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container dis-event-lun">
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container dis-event-lun">
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container dis-event-lun">
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </li>
+        <li>
+            <header class="clearfix">
+                <div class="container">
+                <p>社团本周排行-体育类</p>
+                <p>全部</p>
+                </div>
+            </header>
+            <!--热门活动图片轮播-->
+            <div class="swiper-container week-lunbo-5 clearfix">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container dis-event-lun">
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container dis-event-lun">
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container dis-event-lun">
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dis-event-con" data-eventid="">
+                                <!--跳转活动-->
+                                <a class="to-event" data-eventid="">
+                                    <img class="img-responsive" src="img/testimg.jpg">
+                                    <div class="dis-caption">
+                                        <p>健身俱乐部</p>
+                                        <p>苏州大学</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--week-lunbo-1-->
+<script>
+    var week1 = new Swiper('.week-lunbo-1', {
+        direction: 'horizontal',
+        autoplay: 3000,
+        observer: true,
+        observeParents: true,
+        pagination: '.swiper-pagination'
+
+    })
+    var week2 = new Swiper('.week-lunbo-2', {
+        direction: 'horizontal',
+//        autoplay: 4000,
+        observer: true,
+        observeParents: true,
+        pagination: '.swiper-pagination'
+
+    })
+    var week3 = new Swiper('.week-lunbo-3', {
+        direction: 'horizontal',
+//        autoplay: 2000,
+        observer: true,
+        observeParents: true,
+        pagination: '.swiper-pagination'
+
+    })
+    var week4 = new Swiper('.week-lunbo-4', {
+        direction: 'horizontal',
+//        autoplay: 1000,
+        observer: true,
+        observeParents: true,
+        pagination: '.swiper-pagination'
+
+    })
+    var week5 = new Swiper('.week-lunbo-5', {
+        direction: 'horizontal',
+//        autoplay: 5000,
+        observer: true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents: true,//修改swiper的父元素时，自动初始化swiper
+        pagination: '.swiper-pagination'
+
+
+    })
+
+</script>

@@ -1,0 +1,7 @@
+CACHE MANIFEST
+CACHE:
+src/*
+
+NETWORK:
+ # 不需要缓存的
+

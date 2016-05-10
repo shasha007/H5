@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body ng-app="friend">
+		<!--头部说明-->
+		<div class="w-head"><img src="img/back.png" class="w-back" onclick="history.back(-1)"><span>兴趣相投好友</span></div>
+		<!--搜索-->
+		<div class="w-searchBar" ng-controller="searchbar">
+			<div>
+				<img src="img/search.png" ng-class="{alignL:bool}" >
+				<input type="text" placeholder="搜索姓名"  ng-focus="setBool()" ng-blur="setBool()"/>
+			</div>
+		</div>
+		<ul class="w-friendList">
+			<li>
+				<img src="img/tx2.png" class="w-pic">
+				<div>
+					<p><span>张宇轩</span><img src="img/sex.png"></p>
+					<i>中南财经大学</i>
+				</div>
+				<button>+  好友</button>
+				<button>临时会话</button>
+				
+			</li>
+			<li>
+				<img src="img/tx2.png" class="w-pic">
+				<div>
+					<p><span>张宇轩</span><img src="img/sex.png"></p>
+					<i>中南财经大学</i>
+				</div>
+				<button>+  好友</button>
+				<button>临时会话</button>
+				
+			</li>
+			<li>
+				<img src="img/tx2.png" class="w-pic">
+				<div>
+					<p><span>张宇轩</span><img src="img/sex.png"></p>
+					<i>中南财经大学</i>
+				</div>
+				<button>+  好友</button>
+				<button>临时会话</button>
+				
+			</li>
+		</ul>
+	</body>
+	<script type="text/javascript" src="js/angular.min.js" ></script>
+	<script type="text/javascript" src="js/route.js" ></script>
+</html>

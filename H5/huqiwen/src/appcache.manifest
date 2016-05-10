@@ -1,0 +1,10 @@
+CACHE MANIFEST
+CACHE:
+css/style.css
+css/reset.css
+img/testimg.jpg
+
+NETWORK:
+# 不需要缓存的
+tpls/*.html
+

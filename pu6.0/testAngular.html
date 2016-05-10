@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/app.js" ></script>
+	</head>
+	<!--校验不通过聚焦-->
+	<style>
+		input.ng-invalid {
+		    background-color: lightblue;
+		}
+		table, th , td {
+		  border: 1px solid grey;
+		  border-collapse: collapse;
+		  padding: 5px;
+		}
+		/*table tr:nth-child(odd) {
+		  background-color: #f1f1f1;
+		}
+		table tr:nth-child(even) {
+		  background-color: #ffffff;
+		}*/
+	</style>
+	<body ng-app="myApp">
+		<!--input标签ng-model-->
+		<input ng-model="name" type="text" placeholder="Your name" />
+		<h1>Hello{{name}}</h1>
+		<!--ng-controller-->
+		<div ng-controller="myCtrl">
+			<h1>hello{{name2}}</h1>
+			<!--ng-click-->
+			<button ng-click="add(1)">Add</button>
+			<a ng-click="subtract(1)">Subtract</a>
+			<h4>Current count:{{counter}}</h4>
+			<!--对象-->
+			<h1>{{person}}</h1>
+			and their name:
+			<h2>{{person[0].name}}</h2>
+			and their sex:
+			<h2>{{person[0].sex}}</h2>
+			and their name:
+			<h2>{{person[1].name}}</h2>
+			and their sex:
+			<h2>{{person[1].sex}}</h2>
+			<!--过滤器-->
+			<h4>美元{{123|currency}}</h4>
+			<h4>{{today|date:'yyyy-mm-dd hh:mm:ss'}}</h4>
+			<h4>{{['are','lee','adf','hng']|filter:'e'}}</h4>
+			<button ng-click="compare()">比较</button>是否相同？{{same}}
+			<h4>{{{'name':'ari','City':'lianyungang'}|json}}</h4>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+					<!--表单校验-->
+			<div class="col-md-6">
+        <form role="form" class="form-horizontal" name="form1">
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label for="name">1.必填项</label>
+                    {{form1.name.$valid}}
+                    {{form1.name.$dirty}}
+				    {{form1.name.$touched}}
+                </div>
+                <div class="col-md-8">
+                    <input class="form-control" id="name" name="name" type="text" required ng-model='user.name' />
+                    <!--为应用数据提供状态值-->
+                    {{form1.name.$valid}}
+				    {{form1.name.$dirty}}
+				    {{form1.name.$touched}}
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label for="minlength">2.最小长度=5</label>
+                </div>
+                <div class="col-md-8">
+                    <input type="text" id="minlength" ng-minlength="5" ng-model="user.minlength" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label for="minlength">3.最大长度=20</label>
+　　　　　　　　　　</div>
+                <div class="col-md-8">
+                    <input type="text" ng-model="user.maxlength" ng-maxlength="20" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label for="minlength">4. 模式匹配</label>
+               </div>
+                <div class="col-md-8">
+                 <input type="text" id="minlength" ng-model="user.pattern" ng-pattern="/^[a-zA-Z]*\d$/" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label for="email">5. 电子邮件</label>
+　　　　　　　　　　</div>
+                <div class="col-md-8">
+                    <input type="email" id="email" name="email" ng-model="user.email" class="form-control" />
+                     <span ng-show="form1.email.$error.email">不是一个合法的邮箱地址</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label for="age">6. 数字</label>
+　　　　　　　　　　</div>
+                <div class="col-md-8">
+                    <input type="number" id="age" name="age" ng-model="user.age" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label for="url"> 7. URL</label>
+　　　　　　　　　　</div>
+                <div class="col-md-8">
+                    <input type="url" id="url" name="homepage" ng-model="user.url" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group text-center">
+                <input class="btn btn-primary btn-lg" type="submit" value="提交" ng-disabled="form1.$invalid"/>
+            </div>
+        </form>       
+    </div>
+    <div class="col-md-12">
+        1.必填项:{{user.name}}<br>
+        2.最小长度=5:{{user.minlength}}<br>
+        3.最大长度=20:{{user.maxlength}}<br>
+        4.模式匹配:{{user.pattern}}<br>
+        5.电子邮件:{{user.email}}<br>
+        6.数字:{{user.age}}<br>
+        7.URL:{{user.url}}<br>
+    </div>
+	</body>
+</html>
+<div>
+	<p>
+		姓名：{{firstname+" "+lastname}}
+	</p>
+</div>
+<select ng-model="selectedname" ng-options="x for x in namelists">
+</select>
+
+<select>
+<option ng-repeat="x in namelists">{{x}}</option>
+</select>
+
+<select ng-model="selectedSite">
+<option ng-repeat="x in sites" value="{{x.site}}">{{x.site}}</option>
+</select>
+
+<h1>你选择的是: {{selectedSite}}</h1>
+
+<select ng-model="selectedSite" ng-options="x for (x, y) in sites">
+</select>
+
+<h1>你选择的值是: {{selectedSite}}</h1>
+
+<select ng-model="selectedCar" ng-options="y.brand for (x, y) in cars">
+</select>
+<!--//table   ng-repeat-->
+<table>
+  <tr ng-repeat="x in persons| orderBy : 'Country'">
+  	<td>{{ $index + 1 }}</td>
+    <td>{{ x.Name }}</td>
+    <td>{{ x.Country  | uppercase }}</td>
+  </tr>
+</table>
+<!--奇数偶数隔行-->
+ <table>
+<tr ng-repeat="x in persons">
+<td ng-if="$odd" style="background-color:#f1f1f1">{{ x.Name }}</td>
+<td ng-if="$even">{{ x.Name }}</td>
+<td ng-if="$odd" style="background-color:#f1f1f1">{{ x.Country }}</td>
+<td ng-if="$even">{{ x.Country }}</td>
+</tr>
+</table> 
+<!--隐藏显示ng-disabled 指令直接绑定应用程序数据到 HTML 的 disabled 属性。-->
+<p>
+<button ng-disabled="mySwitch">点我!</button>
+</p>
+
+<p>
+<input type="checkbox" ng-model="mySwitch">按钮
+</p>
+
+<p>
+{{ mySwitch }}
+</p>
+
+<!--ng-show隐藏或显示一个 HTML 元素-->
+
+<p ng-show="true">我是可见的。</p>
+
+<p ng-show="false">我是不可见的。</p>
+<!--使用表达式来计算布尔值（ true 或 false）:-->
+<p ng-show="5 < 12">我是可见的。</p>
+<!--ng-hide隐藏或显示一个 HTML 元素-->
+<p ng-hide="true">我是不可见的。</p>
+
+<p ng-hide="false">我是可见的。</p>
+<!--ng-click事件-->
+<button ng-click="count = count + 1">点我！</button>
+<p>{{ count }}</p>
+<!--ng-click事件隐藏HTML页面-->
+<button ng-click="toggle()">>隐藏/显示</button>
+
+<p ng-hide="myVar">
+名: <input type="text" ng-model="firstName"><br>
+姓名: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+</p>
+<!--reset-->
+    First Name:<br>
+    <input type="text" ng-model="user.firstName"><br>
+    Last Name:<br>
+    <input type="text" ng-model="user.lastName">
+    <br><br>
+    <button ng-click="reset()">RESET</button>
+    
+    <!--动态插入HTML-->
+    <div ng-controller="TestCtrl">
+  <span string-html="string"></span>
+</div>
+		</div>
+		{{somebody}}
+	</body>
+</html>

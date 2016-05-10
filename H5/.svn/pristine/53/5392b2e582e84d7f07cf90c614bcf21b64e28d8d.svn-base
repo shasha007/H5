@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>访客列表</title>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="L-visitListtitle">
+		<img src="img/back.png" style="width: 15px;height: 15px;"/>
+		<div><center>我的访客</center></div>
+	</div>
+	<div class="L-myVisitors">
+		<ul>
+			<li id="L-visitors">
+				<img src="img/photo.png" class="L-touxiang">
+				<div class="L-visitor">
+					<p class="visitName">
+						<span class="L-name">阿曼</span>
+						<img src="img/icon_boy.png" class="sex" style="width: 15px;height: 20px;">
+					</p>
+					<p class="L-visitSchool">
+						北京大学&nbsp;&nbsp;&nbsp;<span>音乐学院</span>
+						<span id="L-visitDate">2015-11-22</span>
+					</p>
+				</div>
+			</li>
+			<li id="L-visitors">
+				<img src="img/photo.png" class="L-touxiang">
+				<div class="L-visitor">
+					<p class="visitName">
+						<span class="L-name">阿曼</span>
+						<img src="img/icon_boy.png" class="sex" style="width: 15px;height: 20px;">
+					</p>
+					<p class="L-visitSchool">
+						北京大学&nbsp;&nbsp;&nbsp;<span>音乐学院</span>
+						<span id="L-visitDate">2015-11-22</span>
+					</p>
+				</div>
+			</li>
+			<li id="L-visitors">
+				<img src="img/photo.png" class="L-touxiang">
+				<div class="L-visitor">
+					<p class="visitName">
+						<span class="L-name">阿曼</span>
+						<img src="img/icon_boy.png" class="sex" style="width: 15px;height: 20px;">
+					</p>
+					<p class="L-visitSchool">
+						北京大学&nbsp;&nbsp;&nbsp;<span>音乐学院</span>
+						<span id="L-visitDate">2015-11-22</span>
+					</p>
+				</div>
+			</li>
+			<li id="L-visitors">
+				<img src="img/photo.png" class="L-touxiang">
+				<div class="L-visitor">
+					<p class="visitName">
+						<span class="L-name">阿曼</span>
+						<img src="img/icon_girl.png" class="sex" style="width: 15px;height: 20px;">
+					</p>
+					<p class="L-visitSchool">
+						北京大学&nbsp;&nbsp;&nbsp;<span>音乐学院</span>
+						<span id="L-visitDate">2015-11-22</span>
+					</p>
+				</div>
+			</li>
+			<li id="L-visitors">
+				<img src="img/photo.png" class="L-touxiang">
+				<div class="L-visitor">
+					<p class="visitName">
+						<span class="L-name">阿曼</span>
+						<img src="img/icon_boy.png" class="sex" style="width: 15px;height: 20px;">
+					</p>
+					<p class="L-visitSchool">
+						北京大学&nbsp;&nbsp;&nbsp;<span>音乐学院</span>
+						<span id="L-visitDate">2015-11-22</span>
+					</p>
+				</div>
+			</li>
+</html>

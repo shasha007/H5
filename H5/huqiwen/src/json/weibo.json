@@ -1,0 +1,26 @@
+{
+  "code": 1,
+  "msg": "成功",
+  "content": {
+    "userCode": "1",
+    "userName": "哈哈哈哈",
+    "userSchool" : "四川外语大学重庆南方翻译学院",
+    "userSex" : "1",
+    "isFriend" : "1",
+    "weiboFalg" : "0",
+    "weiboContent" : "内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容",
+    "weiboTime" : "昨日20:11",
+    "weiboPresent":"111",
+    "isPresent" : "0",
+    "weiboLike" : "111",
+    "isLike" : "0",
+    "weiboComment" :"111",
+    "isComment" :"0",
+    "weiboPic" : [
+      {"picUrl": "img/testimg.jpg"},
+      {"picUrl": "img/testimg.jpg"},
+      {"picUrl": "img/testimg.jpg"},
+      {"picUrl": "img/testimg.jpg"}
+    ]
+  }
+}

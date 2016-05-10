@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>我们的关系</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!--头部说明-->
+		<div class="w-head"><img src="img/back.png" class="w-back">我们的关系<img src="img/share2.png" class="w-share"></div>
+		<div class="w-shareBg">
+			<div>
+				<div>5</div>
+				<p>共同参加校园活动</p>
+			</div>
+			<div>
+				<div>5</div>
+				<p>共同参加兴趣活动</p>
+			</div>
+		</div>
+		<div class="w-shareBg">
+			<div>
+				<div>口袋大学</div>
+				<p>我们一起的学校</p>
+			</div>
+			<div class="w-headPic">
+				<img src="img/tx2.png">
+				<img src="img/tx2.png">
+			</div>
+			<div>
+				<div><span>265天</span></div>
+				<p>成为好友时间</p>
+			</div>
+		</div>
+		<div class="w-shareBg">
+			<div>
+				<div>口袋大学</div>
+				<p>共同好友</p>
+			</div>
+			<div>
+				<div><span>265天</span></div>
+				<p>共同部落</p>
+			</div>
+		</div>
+		<!--评级-->
+		<p class="w-star">
+			<img src="img/five-star.png">
+			<img src="img/five-star.png">
+			<img src="img/five-star.png">
+			<img src="img/five-star.png">
+			<img src="img/five-star.png">
+		</p>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body ng-app="noticeDetail" ng-controller="noticedetail"  ng-cloak>
+		<!--头部说明-->
+		<div class="w-head"><img src="img/back.png" class="w-back" onclick="history.back(-1)" ng-click="jump()"><span>{{bar}}</span><a ng-href="#/noticeEdit" ng-click="jump($event)">{{operat}}</a></div>
+		<div class="w-content"  ng-swipe-left="downData($event)" ng-swipe-right="upData($event)">
+			<div ng-view class="{{routePage}}"  id="container"></div>	
+		</div>
+	</body>
+	<script type="text/javascript" src="js/angular.min.js" ></script>
+	<script type="text/javascript" src="js/angular-animate.min.js" ></script>
+	<script type="text/javascript" src="js/angular-route.min.js" ></script>
+	<script type="text/javascript" src="js/angular-swipe.js" ></script>
+	<script type="text/javascript" src="js/route.js" ></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+	<script>
+		var screenH=window.screen.height;
+		var container=document.getElementById("container");
+		container.style.minHeight=screenH-60+'px';
+	</script>
+</html>

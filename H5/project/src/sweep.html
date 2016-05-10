@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!--头部说明-->
+		<div class="w-head">扫描二维码说明</div>
+		<div class="w-container" id="wContainer">
+			<div class="w-descript">
+				<p>
+					<img src="img/sign.png">
+					<img src="img/arrow.jpg">
+					<img src="img/ewm.png">
+				</p>
+				<p><b>扫一扫</b></p>
+				<p>1.可扫个人名片、部落二维码、个人二维码</p>
+				<p>扫描相应二维码后可以快捷添加好友、申请加入部落和报名活动：</p>
+				<p class="sign"><b>活动签到(活动发起人/签到员)</b></p>
+				<p>1.打开扫一扫,点击右上角"签到",选定签到活动;</p>
+				<p>2.对准他的名片(二维码)即可签到</p>
+				<button>开始使用</button>
+			</div>
+		</div>
+	</body>
+	<script>
+		var screenH=window.screen.height;
+		var wContainer=document.getElementById("wContainer");
+		wContainer.style.height=screenH-30+'px';
+	</script>
+</html>

@@ -1,0 +1,36 @@
+<header class="event-header  clearfix">
+    <div class="container">
+    <div class="pull-left text-left">
+        榜单榜单榜单榜单榜单榜单榜单榜单榜单榜单榜单榜单
+        榜单榜单榜单榜单榜单榜单榜单榜单榜单榜单榜单榜单
+    </div>
+    <div class="pull-right text-right">
+        切换学校
+        <span class="arrow"></span>
+    </div>
+    </div>
+</header>
+<div class="event-more-list white">
+    <ul infinite-scroll='reddit.nextPage()' infinite-scroll-disabled='reddit.busy' infinite-scroll-distance='5'>
+        <li ng-repeat='event in reddit.items'>
+            <a class="container" href="https://www.baidu.com/">
+                <div class="event-more-list-l">
+                    <img class="img-responsive"
+                         src="http://pocketuniv.com/data/upthumb/2015/1230/16/56838f882c68d_125x125f.jpg">
+                </div>
+                <div class="event-more-list-r to-event" data-eventid="">
+                    <div class="event-more-flag">
+                        <span ng-hide="isflag1">111</span><span ng-hide="isflag2">11</span><span
+                            ng-hide="isflag3">111</span>
+                    </div>
+                    <p class="event-more-name">{{event.name}}</p>
+
+                    <p class="event-more-school"><i class="glyphicon glyphicon-user">&emsp13;</i>{{event.addr}}</p>
+
+                    <p class="event-more-time"><span class="glyphicon glyphicon-time">&emsp13;</span>{{event.time}}</p>
+                </div>
+            </a>
+        </li>
+        <div ng-show='reddit.busy'>Loading data...</div>
+    </ul>
+</div>

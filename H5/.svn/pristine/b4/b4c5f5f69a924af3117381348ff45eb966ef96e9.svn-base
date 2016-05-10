@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html  manifest="manifest.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "format-detection" content = "telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <script src="bower_components/angular/angular.min.js"></script>
+</head>
+<body>
+<div>
+<img src="img/testimg.jpg">
+</div>
+
+</body>
+</html>

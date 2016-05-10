@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html ng-app="pu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>实际学分明细</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body bgcolor="#F3F1EE">
+<div class="L-award-list">
+    <ul class="L-container">
+        <li class="L-to-event" data-eventid="">
+            <!--跳转活动-->
+           <div class="L-awardKfc">
+                <div id="L-awardDetail">
+                    <div class="L-award-pic">
+                        <img class="L-img-award" src="img/photo.png">
+                        <p id="L-awrdName">肯德基</p>
+                        <p id="L-awardQuan">全场优惠券	</p>
+              	    </div>
+                    <div class="L-award-expired">
+                	    <p><img src="img/event_time.png" width="12px"/>&nbsp;今天即将过期</p>
+                    </div>
+                </div>
+                <div class="L-award-money">
+                    <p id="L-awardM">￥200</p>
+                </div>
+            </div>
+        </li>
+        <p id="L-awardExpeirdquan">不可用券</p>
+        <li class="L-to-event" data-eventid="">
+            <!--跳转活动-->
+           <div class="L-awardKfc">
+                <div id="L-awardDetail">
+                    <div class="L-award-pic">
+                        <img class="L-img-award" src="img/photo.png">
+                        <p id="L-awrdName">肯德基</p>
+                        <p id="L-awardQuan">全场优惠券	</p>
+              	    </div>
+                    <div class="L-award-expired">
+                	    <p><span id="L-awardDat">已于2016-02-15 23:59:59 过期</span></p>
+                    </div>
+                </div>
+                <div class="L-award-money">
+                	<img id="L-img-expired" src="img/expired.png"/>
+                    <div id="L-awardM">￥200</div>
+                    <p id="L-awrdName">满两张可用</p>
+                </div>
+            </div>
+        </li>
+        <li class="L-to-event" data-eventid="">
+           <div class="L-awardKfc">
+                <div id="L-awardDetail">
+                    <div class="L-award-pic">
+                        <img class="L-img-award" src="img/photo.png">
+                        <p id="L-awrdName">肯德基</p>
+                        <p id="L-awardQuan">全场优惠券	</p>
+              	    </div>
+                    <div class="L-award-expired">
+                	    <p><span id="L-awardDat">已于2016-02-15 23:59:59 使用</span></p>
+                    </div>
+                </div>
+                <div class="L-award-money">
+                	<img id="L-img-expired" src="img/used.png"/>
+                    <div id="L-awardM">￥200</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

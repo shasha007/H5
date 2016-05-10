@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script type="text/javascript" src="js/angular.min.js" ></script>
+    <script type="text/javascript" src="js/app.js" ></script>
+    <title>我的评论列表</title>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body ng-app="allCommentApp">
+	<!--<div class="L-myTopicTitle">
+		<img src="img/back.png" id="L-backimg" style="width: 15px;height: 15px;" href=""/>
+		<div id="L-topic">
+			<span id="L-collectName">所有评论</span>
+			<input id="L-commendShow" type="button" value="∧" onclick="showComment();"/>
+		</div>
+	</div>-->
+	<div id="L-commentcontent">
+		<!--话题列表-->
+		<ul class="L-commentList" ng-controller="myCtrl">
+			<li  ng-repeat="item in allComment">
+				<p id="L-fromTitle" ng-if="item.businessType=='0'">我发出的</p>
+				<p id="L-fromTitle" ng-if="item.businessType=='1'">评论我的</p>
+				<div class="L-commendinfo">
+					<img src="{{item.usericon}}" class="L-commentPhoto">
+					<div id="L-userDetaile">
+						<p>{{item.usernickName}}<span id="L-backcommend"></span></p>
+						<p><i>{{item.time}}{{item.userschoolName}}</i></p>
+					</div>
+					<!--<img src="{{item.Usericon}}" ng-if="item.businessType=='1' class="L-commentPhoto">
+					<div id="L-userDetaile" ng-if="item.businessType=='1'>
+						<p>{{item.UsernickName}}<span id="L-backcommend"><a href="" ng-if="item.businessType=='1'">回复</a></span></p>
+						<p><i>{{item.time}}{{item.userschoolName}}</i></p>
+					</div>-->
+					<!--评论-文字-->
+					<div id="L-commendMy"  ng-if="item.businessType=='0'">
+					<!--<span>回复&nbsp;<font color="#f08247">{{item.commentUser}}:</font>{{item.content}}</span>
+					<p><span id="L-lastcommment"><font color="#f08247">{{item.commentUser}}:</font>{{item.commentContent}}</span></p>-->
+					<span>{{item.content}}</span>
+					<p><span id="L-lastcommment">{{item.commentContent}}</span></p>
+					</div>
+					<div id="L-commendMy"  ng-if="item.businessType=='1'">
+						<span id="L-content">{{item.content}}</span>
+					</div>
+				</div>
+				<!--评论-相关-->
+				<div class="L-commentPic">
+					<img src="{{item.blogimgUrl}}">
+					<span id="L-blogUser">{{item.blogUser}}</span>
+					<p id="L-commmentdetail">{{item.blogcontent}}</p>
+				</div>
+			</li>
+			<!--<li>
+				<p>评论我的</p>
+				<div class="L-commendinfo">
+					<img src="img/photo.png" class="L-commentPhoto">
+					<div>
+						<p>英雄联盟</p>
+						<p><i>15-10-30 17:09 来自PU</i></p>
+					</div>-->
+					<!--评论-文字-->
+					<!--<div id="L-commendMy">
+						<span>你知道，这听起来像来自外太空的音乐</span>
+					</div>
+				</div>-->
+				<!--评论-相关-->
+				<!--<div class="L-commentPic">
+					<img src="img/img4.jpg">
+					<span>@英雄联盟</span>
+					<p id="L-commmentdetail">#苏州身边事 【昆山第一商业综合体-就放狗物中心今日开业啦！】昆山有印象城，昆山有</p>
+				</div>
+			</li>-->
+		</ul>
+	</div>
+</body>
+</html>

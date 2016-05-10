@@ -1,0 +1,506 @@
+<!--发布话题 只需要给我个id就行-->
+<div class="publish-topic" data-themeid="">
+    <img class="img-responsive" src="img/publish_weibo.png"></div>
+<div id="top-back">
+    <img class="img-responsive" src="img/return_top.png">
+</div>
+<div class="square-list ">
+    <ul infinite-scroll='topic.nextPage()' infinite-scroll-disabled='topic.busy' infinite-scroll-distance='5'>
+        <li class="square-list-li container" data-topicids="" ng-repeat='topics in topic.items'>
+            <header class="clearfix">
+                <div class="square-li-l"><a
+                        data-userid=""><img class="img-responsive" src="img/testimg.jpg"></a>
+                </div>
+                <div class="square-li-c">
+                    <div class="clearfix">
+                        <!--有female和male两个class 根据性别的不同span的class也需要改变-->
+                        <p>{{topics.username}}&emsp13;
+                        </p>
+                        <i class="male" ng-if="topics.sex=='false'">♀</i>
+                        <i class="female" ng-if="topics.sex=='true'">♀</i>
+                    </div>
+                    <p><span>{{topics.school}}</span></p>
+                </div>
+                <div class="square-li-addfirend" ng-if="topics.isme=='false'&&topics.isfirend=='true'"><span class=" added-friend" style="color: #ccc;border: 1px solid #ccc;">已添加</span></div>
+                <div class="square-li-addfirend" ng-if="topics.isme=='false'&&topics.isfirend=='false'"><span onclick="">+好友</span></div>
+                <div class="square-li-addfirend" ng-if="topics.isme=='true'">
+                    <span ng-click="topic_delete()">删除</span>
+                </div>
+            </header>
+            <a class="" data-weiboidd=""
+               href="#/weibo/{{topics.id}}">
+                <div class="square-li-con">
+                    <span class='tips-toutiao' ng-if="topics.istop=='true'">头条</span>
+                    {{topics.content}}
+                </div>
+                <div>
+                </div>
+                <div class="square-li-pic container">
+                    <div class="row">
+                        <div class="" ng-class="{1: 'col-my-12',2:'col-my-6', 3: 'col-my-4',4:'col-my-6',5:'col-my-4',6:'col-my-4',7:'col-my-4',8:'col-my-4',9:'col-my-4'}[topics.pics.length]" ng-repeat="pic in topics.pics">
+                            <img class="img-responsive" src="{{pic.img}}">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <footer class="clearfix">
+                <div class="pull-left small">{{topics.time}}</div>
+                <div class="squire-icon">
+                    <div ng-class="{true: 'liked', false: ''}[topics.commented]">{{topics.comment}}</div>
+                    <div class="squire-icon-img ">
+                        <img ng-src="img/commented.png" err-src="img/404.jpg" class="img-responsive" ng-if="topics.commented=='true'">
+                        <img ng-src="img/comment.png" err-src="img/404.jpg" class="img-responsive" ng-if="topics.commented=='false'">
+                    </div>
+                    <div ng-class="{true: 'liked', false: ''}[topics.presented]">{{topics.present}}</div>
+                    <div class="squire-icon-img">
+                        <img  ng-src="img/presented.png" err-src="img/404.jpg" class="img-responsive" ng-if="topics.presented=='true'">
+                        <img  ng-src="img/present.png" err-src="img/404.jpg" class="img-responsive" ng-if="topics.presented=='false'">
+                    </div>
+                    <div ng-class="{true: 'liked', false: ''}[topics.liked]">{{topics.like}}</div>
+                    <div class="squire-icon-img">
+                        <img ng-src="img/hearted.png" err-src="img/404.jpg" class="img-responsive" ng-if="topics.liked=='true'">
+                        <img ng-src="img/heart.png" err-src="img/404.jpg" class="img-responsive" ng-if="topics.liked=='false'">
+                    </div>
+                </div>
+            </footer>
+
+        </li>
+        <!--<li class="square-list-li container" data-topicids="">-->
+            <!--<header class="clearfix">-->
+                <!--&lt;!&ndash;跳转个人主页&ndash;&gt;-->
+                <!--<div class="square-li-l"><a-->
+                        <!--data-userid=""><img class="img-responsive" src="img/testimg.jpg"></a>-->
+                <!--</div>-->
+                <!--<div class="square-li-c">-->
+                    <!--&lt;!&ndash;todo&ndash;&gt;-->
+                    <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                    <!--<div class="clearfix">-->
+                        <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                        <!--<p>哈哈哈哈哈哈哈哈哈哈&emsp13;-->
+                        <!--</p>-->
+                        <!--<i class="female">♀</i>-->
+                    <!--</div>-->
+                    <!--<p><span>四川外语大学重庆南方翻译学院</span></p>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend"><span class=" added-friend" style="color: #ccc;border: 1px solid #ccc;">已添加</span></div>&ndash;&gt;-->
+                <!--<div class="square-li-addfirend"><span onclick="">+好友</span></div>-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<span onclick="">删除</span>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--</header>-->
+            <!--<a class="" data-weiboidd=""-->
+               <!--href="">-->
+                <!--<div class="square-li-con">-->
+                    <!--<span class='tips-toutiao'>头条</span>内容-->
+                    <!--内容内容内容内容内容内容内容内容内容内容内容-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--</div>-->
+                <!--<div class="square-li-pic container">-->
+                    <!--<div class="row">-->
+                        <!--&lt;!&ndash;只有一个图片的情况 todo&ndash;&gt;-->
+                        <!--<div class="col-my-12">-->
+                            <!--<img class="img-responsive" src="img/testimg.jpg">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<footer class="clearfix">-->
+                <!--<div class="pull-left small">昨日20:10</div>-->
+                <!--<div class="squire-icon">-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/comment.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/present.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/heart.png" class="img-responsive"></div>-->
+                <!--</div>-->
+            <!--</footer>-->
+
+        <!--</li>-->
+        <!--<li class="square-list-li container" data-topicids="">-->
+            <!--<header class="clearfix">-->
+                <!--&lt;!&ndash;跳转个人主页&ndash;&gt;-->
+                <!--<div class="square-li-l"><a-->
+                        <!--data-userid=""><img class="img-responsive" src="img/testimg.jpg"></a>-->
+                <!--</div>-->
+                <!--<div class="square-li-c">-->
+                    <!--&lt;!&ndash;todo&ndash;&gt;-->
+                    <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                    <!--<div class="clearfix">-->
+                        <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                        <!--<p>哈哈哈哈哈哈哈哈哈哈&emsp13;-->
+                        <!--</p>-->
+                        <!--<i class="female">♀</i>-->
+                    <!--</div>-->
+                    <!--<p><span>四川外语大学重庆南方翻译学院</span></p>-->
+                <!--</div>-->
+                <!--<div class="square-li-addfirend"><span class=" added-friend" style="color: #ccc;border: 1px solid #ccc;">已添加</span></div>-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend"><span onclick="">+好友</span></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend"><span onclick="">删除</span></div>&ndash;&gt;-->
+            <!--</header>-->
+            <!--<a class="" data-weiboidd=""-->
+               <!--href="">-->
+                <!--<div class="square-li-con">-->
+                    <!--<span class='tips-toutiao'>头条</span>内容-->
+                    <!--内容内容内容内容内容内容内容内容内容内容内容-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--</div>-->
+                <!--<div class="square-li-pic container">-->
+                    <!--<div class="row">-->
+                        <!--&lt;!&ndash;只有一个图片的情况 todo&ndash;&gt;-->
+                        <!--<div class="col-my-6" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-6" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<footer class="clearfix">-->
+                <!--<div class="pull-left small">昨日20:10</div>-->
+                <!--<div class="squire-icon">-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/comment.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/present.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/heart.png" class="img-responsive"></div>-->
+                <!--</div>-->
+            <!--</footer>-->
+
+        <!--</li>-->
+        <!--<li class="square-list-li container" data-topicids="">-->
+            <!--<header class="clearfix">-->
+                <!--&lt;!&ndash;跳转个人主页&ndash;&gt;-->
+                <!--<div class="square-li-l"><a-->
+                        <!--data-userid=""><img class="img-responsive" src="img/testimg.jpg"></a>-->
+                <!--</div>-->
+                <!--<div class="square-li-c">-->
+                    <!--&lt;!&ndash;todo&ndash;&gt;-->
+                    <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                    <!--<div class="clearfix">-->
+                        <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                        <!--<p>哈哈哈哈哈哈哈哈哈哈&emsp13;-->
+                        <!--</p>-->
+                        <!--<i class="female">♀</i>-->
+                    <!--</div>-->
+                    <!--<p><span>四川外语大学重庆南方翻译学院</span></p>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend"><span class=" added-friend" style="color: #ccc;border: 1px solid #ccc;">已添加</span></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend"><span onclick="">+好友</span></div>&ndash;&gt;-->
+                <!--<div class="square-li-addfirend">-->
+                    <!--<span onclick="">删除</span>-->
+                <!--</div>-->
+            <!--</header>-->
+            <!--<a class="" data-weiboidd=""-->
+               <!--href="">-->
+                <!--<div class="square-li-con">-->
+                    <!--<span class='tips-toutiao'>头条</span>内容-->
+                    <!--内容内容内容内容内容内容内容内容内容内容内容-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--</div>-->
+                <!--<div class="square-li-pic container">-->
+                    <!--<div class="row">-->
+                        <!--&lt;!&ndash;只有一个图片的情况 todo&ndash;&gt;-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<footer class="clearfix">-->
+                <!--<div class="pull-left small">昨日20:10</div>-->
+                <!--<div class="squire-icon">-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/comment.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/present.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/heart.png" class="img-responsive"></div>-->
+                <!--</div>-->
+            <!--</footer>-->
+
+        <!--</li>-->
+        <!--<li class="square-list-li container" data-topicids="">-->
+            <!--<header class="clearfix">-->
+                <!--&lt;!&ndash;跳转个人主页&ndash;&gt;-->
+                <!--<div class="square-li-l"><a-->
+                        <!--data-userid=""><img class="img-responsive" src="img/testimg.jpg"></a>-->
+                <!--</div>-->
+                <!--<div class="square-li-c">-->
+                    <!--&lt;!&ndash;todo&ndash;&gt;-->
+                    <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                    <!--<div class="clearfix">-->
+                        <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                        <!--<p>哈哈哈哈哈哈哈哈哈哈&emsp13;-->
+                        <!--</p>-->
+                        <!--<i class="female">♀</i>-->
+                    <!--</div>-->
+                    <!--<p><span>四川外语大学重庆南方翻译学院</span></p>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend"><span class=" added-friend" style="color: #ccc;border: 1px solid #ccc;">已添加</span></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend"><span onclick="">+好友</span></div>&ndash;&gt;-->
+                <!--<div class="square-li-addfirend">-->
+                    <!--<span onclick="">删除</span>-->
+                <!--</div>-->
+            <!--</header>-->
+            <!--<a class="" data-weiboidd=""-->
+               <!--href="">-->
+                <!--<div class="square-li-con">-->
+                    <!--<span class='tips-toutiao'>头条</span>内容-->
+                    <!--内容内容内容内容内容内容内容内容内容内容内容-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--</div>-->
+                <!--<div class="square-li-pic container">-->
+                    <!--<div class="row">-->
+                        <!--&lt;!&ndash;只有一个图片的情况 todo&ndash;&gt;-->
+                        <!--<div class="col-my-6" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-6" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-6" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-6" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<footer class="clearfix">-->
+                <!--<div class="pull-left small">昨日20:10</div>-->
+                <!--<div class="squire-icon">-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/comment.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/present.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/heart.png" class="img-responsive"></div>-->
+                <!--</div>-->
+            <!--</footer>-->
+        <!--</li>-->
+        <!--<li class="square-list-li container" data-topicids="">-->
+            <!--<header class="clearfix">-->
+                <!--&lt;!&ndash;跳转个人主页&ndash;&gt;-->
+                <!--<div class="square-li-l"><a-->
+                        <!--data-userid=""><img class="img-responsive" src="img/testimg.jpg"></a>-->
+                <!--</div>-->
+                <!--<div class="square-li-c">-->
+                    <!--&lt;!&ndash;todo&ndash;&gt;-->
+                    <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                    <!--<div class="clearfix">-->
+                        <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                        <!--<p>哈哈哈哈哈哈哈哈哈哈&emsp13;-->
+                        <!--</p>-->
+                        <!--<i class="female">♀</i>-->
+                    <!--</div>-->
+                    <!--<p><span>四川外语大学重庆南方翻译学院</span></p>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend"><span class=" added-friend" style="color: #ccc;border: 1px solid #ccc;">已添加</span></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend"><span onclick="">+好友</span></div>&ndash;&gt;-->
+                <!--<div class="square-li-addfirend">-->
+                    <!--<span onclick="">删除</span>-->
+                <!--</div>-->
+            <!--</header>-->
+            <!--<a class="" data-weiboidd=""-->
+               <!--href="">-->
+                <!--<div class="square-li-con">-->
+                    <!--<span class='tips-toutiao'>头条</span>内容-->
+                    <!--内容内容内容内容内容内容内容内容内容内容内容-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--</div>-->
+                <!--<div class="square-li-pic container">-->
+                    <!--<div class="row">-->
+                        <!--&lt;!&ndash;只有一个图片的情况 todo&ndash;&gt;-->
+                        <!--<div class="col-my-6" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-6" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<footer class="clearfix">-->
+                <!--<div class="pull-left small">昨日20:10</div>-->
+                <!--<div class="squire-icon">-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/comment.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/present.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/heart.png" class="img-responsive"></div>-->
+                <!--</div>-->
+            <!--</footer>-->
+        <!--</li>-->
+        <!--<li class="square-list-li container" data-topicids="">-->
+            <!--<header class="clearfix">-->
+                <!--&lt;!&ndash;跳转个人主页&ndash;&gt;-->
+                <!--<div class="square-li-l"><a-->
+                        <!--data-userid=""><img class="img-responsive" src="img/testimg.jpg"></a>-->
+                <!--</div>-->
+                <!--<div class="square-li-c">-->
+                    <!--&lt;!&ndash;todo&ndash;&gt;-->
+                    <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                    <!--<div class="clearfix">-->
+                        <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                        <!--<p>哈哈哈哈哈哈哈哈哈哈&emsp13;-->
+                        <!--</p>-->
+                        <!--<i class="female">♀</i>-->
+                    <!--</div>-->
+                    <!--<p><span>四川外语大学重庆南方翻译学院</span></p>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend"><span class=" added-friend" style="color: #ccc;border: 1px solid #ccc;">已添加</span></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend"><span onclick="">+好友</span></div>&ndash;&gt;-->
+                <!--<div class="square-li-addfirend">-->
+                    <!--<span onclick="">删除</span>-->
+                <!--</div>-->
+            <!--</header>-->
+            <!--<a class="" data-weiboidd=""-->
+               <!--href="">-->
+                <!--<div class="square-li-con">-->
+                    <!--<span class='tips-toutiao'>头条</span>内容-->
+                    <!--内容内容内容内容内容内容内容内容内容内容内容-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--</div>-->
+                <!--<div class="square-li-pic container">-->
+                    <!--<div class="row">-->
+                        <!--&lt;!&ndash;只有一个图片的情况 todo&ndash;&gt;-->
+                        <!--<div class="col-my-6" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-6" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-6" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-6" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<footer class="clearfix">-->
+                <!--<div class="pull-left small">昨日20:10</div>-->
+                <!--<div class="squire-icon">-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/comment.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/present.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/heart.png" class="img-responsive"></div>-->
+                <!--</div>-->
+            <!--</footer>-->
+        <!--</li>-->
+        <!--<li class="square-list-li container" data-topicids="">-->
+            <!--<header class="clearfix">-->
+                <!--&lt;!&ndash;跳转个人主页&ndash;&gt;-->
+                <!--<div class="square-li-l"><a-->
+                        <!--data-userid=""><img class="img-responsive" src="img/testimg.jpg"></a>-->
+                <!--</div>-->
+                <!--<div class="square-li-c">-->
+                    <!--&lt;!&ndash;todo&ndash;&gt;-->
+                    <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                    <!--<div class="clearfix">-->
+                        <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                        <!--<p>哈哈哈哈哈哈哈哈哈哈&emsp13;-->
+                        <!--</p>-->
+                        <!--<i class="female">♀</i>-->
+                    <!--</div>-->
+                    <!--<p><span>四川外语大学重庆南方翻译学院</span></p>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend"><span class=" added-friend" style="color: #ccc;border: 1px solid #ccc;">已添加</span></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend"><span onclick="">+好友</span></div>&ndash;&gt;-->
+                <!--<div class="square-li-addfirend">-->
+                    <!--<span onclick="">删除</span>-->
+                <!--</div>-->
+            <!--</header>-->
+            <!--<a class="" data-weiboidd=""-->
+               <!--href="">-->
+                <!--<div class="square-li-con">-->
+                    <!--<span class='tips-toutiao'>头条</span>内容-->
+                    <!--内容内容内容内容内容内容内容内容内容内容内容-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--</div>-->
+                <!--<div class="square-li-pic container">-->
+                    <!--<div class="row">-->
+                        <!--&lt;!&ndash;只有一个图片的情况 todo&ndash;&gt;-->
+                        <!--<div class="col-my-6" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-6" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<footer class="clearfix">-->
+                <!--<div class="pull-left small">昨日20:10</div>-->
+                <!--<div class="squire-icon">-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/comment.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/present.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/heart.png" class="img-responsive"></div>-->
+                <!--</div>-->
+            <!--</footer>-->
+        <!--</li>-->
+        <!--<li class="square-list-li container" data-topicids="">-->
+            <!--<header class="clearfix">-->
+                <!--&lt;!&ndash;跳转个人主页&ndash;&gt;-->
+                <!--<div class="square-li-l"><a-->
+                        <!--data-userid=""><img class="img-responsive" src="img/testimg.jpg"></a>-->
+                <!--</div>-->
+                <!--<div class="square-li-c">-->
+                    <!--&lt;!&ndash;todo&ndash;&gt;-->
+                    <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                    <!--<div class="clearfix">-->
+                        <!--&lt;!&ndash;有female和male两个class 根据性别的不同span的class也需要改变&ndash;&gt;-->
+                        <!--<p>哈哈哈哈哈哈哈哈哈哈&emsp13;-->
+                        <!--</p>-->
+                        <!--<i class="female">♀</i>-->
+                    <!--</div>-->
+                    <!--<p><span>四川外语大学重庆南方翻译学院</span></p>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend"><span class=" added-friend" style="color: #ccc;border: 1px solid #ccc;">已添加</span></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="square-li-addfirend"><span onclick="">+好友</span></div>&ndash;&gt;-->
+                <!--<div class="square-li-addfirend">-->
+                    <!--<span onclick="">删除</span>-->
+                <!--</div>-->
+            <!--</header>-->
+            <!--<a class="" data-weiboidd=""-->
+               <!--href="">-->
+                <!--<div class="square-li-con">-->
+                    <!--<span class='tips-toutiao'>头条</span>内容-->
+                    <!--内容内容内容内容内容内容内容内容内容内容内容-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--</div>-->
+                <!--<div class="square-li-pic container">-->
+                    <!--<div class="row">-->
+                        <!--&lt;!&ndash;只有一个图片的情况 todo&ndash;&gt;-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                        <!--<div class="col-my-4" style="background: url('img/testimg.jpg') repeat-x;background-size: cover;height: 150px;"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<footer class="clearfix">-->
+                <!--<div class="pull-left small">昨日20:10</div>-->
+                <!--<div class="squire-icon">-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/comment.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/present.png" class="img-responsive"></div>-->
+                    <!--<div class="">111</div>-->
+                    <!--<div class="squire-icon-img"><img src="img/heart.png" class="img-responsive"></div>-->
+                <!--</div>-->
+            <!--</footer>-->
+        <!--</li>-->
+    </ul>
+</div>

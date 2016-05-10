@@ -1,0 +1,72 @@
+
+{
+  "code": 1,
+  "msg": "成功",
+  "content":[
+  {
+    "events": [
+      {
+        "eventId": "1",
+        "eventName": "fffff",
+        "schoolName": "南京理工大学",
+        "picUrl": "img/testimg.jpg"
+      },
+      {
+        "eventId": "3",
+        "eventName": "2222",
+        "schoolName": "南京理工大学",
+        "picUrl": "img/testimg.jpg"
+      },
+      {
+        "eventId": "4",
+        "eventName": "3333",
+        "schoolName": "南京理工大学",
+        "picUrl": "img/testimg.jpg"
+      }
+    ]
+  },
+  {
+    "events": [
+      {
+        "eventId": "1",
+        "eventName": "4444",
+        "schoolName": "南京理工大学",
+        "picUrl": "img/testimg.jpg"
+      },
+      {
+        "eventId": "3",
+        "eventName": "5555",
+        "schoolName": "南京理工大学",
+        "picUrl": "img/testimg.jpg"
+      },
+      {
+        "eventId": "4",
+        "eventName": "6666",
+        "schoolName": "南京理工大学",
+        "picUrl": "img/testimg.jpg"
+      }
+    ]
+  },
+  {
+    "events": [
+      {
+        "eventId": "1",
+        "eventName": "7777",
+        "schoolName": "南京理工大学",
+        "picUrl": "img/testimg.jpg"
+      },
+      {
+        "eventId": "3",
+        "eventName": "8888",
+        "schoolName": "南京理工大学",
+        "picUrl": "img/testimg.jpg"
+      },
+      {
+        "eventId": "4",
+        "eventName": "9999",
+        "schoolName": "南京理工大学",
+        "picUrl": "img/testimg.jpg"
+      }
+    ]
+  }
+]}

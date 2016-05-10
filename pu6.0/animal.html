@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@keyframes myChange {
+  from {
+      height: 100px;
+  } to {
+      height: 0;
+  }
+}
+
+div {
+  height: 100px;
+  background-color: lightblue;
+}
+
+div.ng-hide {
+  animation: 0.5s myChange;
+}
+</style>
+<script type="text/javascript" src="js/angular.min.js" ></script>
+<script type="text/javascript" src="js/angular-animate.min.js" ></script>
+
+</head>
+<body ng-app="ngAnimate">
+
+隐藏 DIV: 
+<!--<input type="checkbox" ng-model="myCheck">-->
+					<p id="p1" ng-model="myCheck1">
+					<span id="tag1">1.PU是什么？</span>
+					<a href="" id="a1" class="L-a" style="display: block;float: right;">></a>
+				</p>
+
+<div ng-hide="myCheck1">
+</div>
+
+
+</body>
+</html>

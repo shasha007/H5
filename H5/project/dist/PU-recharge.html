@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>PU币充值</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body ng-app="recharge" ng-controller="rechargeCtrl">
+		<!--头部说明-->
+		<div class="w-head"><img src="img/back.png" class="w-back" onclick="history.back(-1)">PU币充值</div>
+		<div class="w-adv">
+			<img src="img/banner.png">
+			<input type="number" placeholder="选择充值金额" ng-model="sum" set-Focus id="rechargeSum"/>
+		</div>
+		<p class="w-selectNum">
+			<button ng-click="changeSum(10)" ng-class="{selected:bool}">
+				<img src="img/PU.png">
+				￥ 10.00
+			</button>
+			<button ng-click="changeSum(50)" ng-class="{selected:bool}">
+				<img src="img/PU.png">
+				￥ 50.00
+			</button>
+		</p>
+		<p class="w-selectNum">
+			<button ng-click="changeSum(100)" ng-class="{selected:bool}">
+				<img src="img/PU.png">
+				￥ 100.00
+			</button>
+			<button ng-click="changeSum(200)" ng-class="{selected:bool}">
+				<img src="img/PU.png">
+				￥ 200.00
+			</button>
+		</p>
+		<p class="w-selectNum w-other">
+			<button ng-click="otherSum()">请输入其他金额</button>
+		</p>
+		<p class="w-selectNum w-recharge">
+			<button>微信充值</button>
+			<button>支付宝充值</button>
+		</p>
+	</body>
+	<script type="text/javascript" src="js/angular.min.js" ></script>
+	<script type="text/javascript" src="js/route.js" ></script>
+</html>

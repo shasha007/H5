@@ -1,0 +1,53 @@
+<p>
+    <a href="#/discover">discover</a>
+</p>
+<div>
+    <!--<button ng-click="doalert();"><span ng-bind="greeting.text"></span></button>-->
+    <input ng-model="watchs">
+    <div ng-repeat="userinfo in user" >
+        username:{{userinfo.name}}<br>
+        id:{{userinfo.id}}
+    </div>
+</div>
+<div class="container">
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <div class="panel-title">
+            PU!!!!
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-xs-12">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">
+                            邮箱:
+                        </label>
+                        <div class="col-xs-9">
+                            <input type="text" class="form-control" placeholder="123123" ng-model="user.name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">
+                            邮箱:
+                        </label>
+                        <div class="col-xs-9">
+                            <input type="text" class="form-control" placeholder="123123" ng-model="user.id">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xsl-3">
+                            <button ng-click="doalert()">{{user.name}}</button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button ng-click="reset()">reset</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

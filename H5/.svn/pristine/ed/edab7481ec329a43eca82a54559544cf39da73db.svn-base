@@ -1,0 +1,29 @@
+{
+  "name": "TestGrunt",
+  "version": "0.0.1",
+  "description": "测试",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-htmlmin": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-qunit": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-copy":"latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "huqiwen",
+  "license": "MIT"
+}

@@ -1,0 +1,72 @@
+{
+  "code": 1,
+  "msg": "成功",
+  "content": [
+    {
+      "tribe3": [
+        {
+          "tribeId": "1",
+          "tribeName": "1111",
+          "schoolName": "南京理工大学",
+          "picUrl": "img/testimg.jpg"
+        },
+        {
+          "tribeId": "2",
+          "tribeName": "222",
+          "schoolName": "南京理工大学",
+          "picUrl": "img/testimg.jpg"
+        },
+        {
+          "tribeId": "3",
+          "tribeName": "333",
+          "schoolName": "南京理工大学",
+          "picUrl": "img/testimg.jpg"
+        }
+      ]
+    },
+    {
+      "tribe3": [
+        {
+          "tribeId": "4",
+          "tribeName": "4444",
+          "schoolName": "南京理工大学",
+          "picUrl": "img/testimg.jpg"
+        },
+        {
+          "tribeId": "5",
+          "tribeName": "5",
+          "schoolName": "南京理工大学",
+          "picUrl": "img/testimg.jpg"
+        },
+        {
+          "tribeId": "6",
+          "tribeName": "7777",
+          "schoolName": "南京理工大学",
+          "picUrl": "img/testimg.jpg"
+        }
+      ]
+    },
+    {
+      "tribe3": [
+        {
+          "tribeId": "7",
+          "tribeName": "88888",
+          "schoolName": "南京理工大学",
+          "picUrl": "img/testimg.jpg"
+        },
+        {
+          "tribeId": "8",
+          "tribeName": "999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+          "schoolName": "南京理工大学南京理工大学南京理工大学南京理工大学南京理工大学南京理工大学南京理工大学",
+          "picUrl": "img/testimg.jpg"
+        },
+        {
+          "tribeId": "9",
+          "tribeName": "1111",
+          "schoolName": "南京理工大学",
+          "picUrl": "img/testimg.jpg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+<nav class="h-scheve  clearfix">
+    <div ng-click="show('1')" ng-class="{true: 'liked', false: ''}[show1]">
+        分类
+    </div>
+    <div ng-click="show('2')" ng-class="{true: 'liked', false: ''}[show2]">
+        院系
+    </div>
+    <div ng-click="show('3')" ng-class="{true: 'liked', false: ''}[show3]">
+        排序
+    </div>
+</nav>
+<div class="h-scheve-show1 clearfix">
+    <div class="h-show-1" ng-show="show1">
+        <header>
+            全部
+        </header>
+        <ul class="container">
+            <li>
+                <img class="img-responsive" src="img/testimg.jpg">
+
+                <p>学术创新</p>
+            </li>
+            <li>
+                <img class="img-responsive" src="img/testimg.jpg">
+
+                <p>学术创新</p>
+            </li>
+            <li>
+                <img class="img-responsive" src="img/testimg.jpg">
+
+                <p>学术创新</p>
+            </li>
+            <li>
+                <img class="img-responsive" src="img/testimg.jpg">
+
+                <p>学术创新</p>
+            </li>
+            <li>
+                <img class="img-responsive" src="img/testimg.jpg">
+
+                <p>学术创新</p>
+            </li>
+        </ul>
+    </div>
+
+    <div ng-show="show2">
+        <header>全部</header>
+        <ul class="h-show-2">
+            <li>
+                即将开始
+            </li>
+            <li>
+                最多好友报名
+            </li>
+            <li>
+                最热排序
+            </li>
+        </ul>
+    </div>
+
+    <div ng-show="show3">
+        <header>全部</header>
+        <ul class="h-show-3">
+            <li>
+                即将开始
+            </li>
+            <li>
+                最多好友报名
+            </li>
+            <li>
+                最热排序
+            </li>
+            <li>
+                即将开始
+            </li>
+            <li>
+                即将开始
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="event-more-list white" style="margin-top: 40px">
+    <ul infinite-scroll='SchoolEvent.nextPage()' infinite-scroll-disabled='SchoolEvent.busy'
+        infinite-scroll-distance='5'>
+        <li ng-repeat='event in SchoolEvent.items'>
+            <a class="container" href="https://www.baidu.com/">
+                <div class="event-more-list-l">
+                    <img class="img-responsive"
+                         src="http://pocketuniv.com/data/upthumb/2015/1230/16/56838f882c68d_125x125f.jpg">
+                </div>
+                <div class="event-more-list-r to-event" data-eventid="">
+                    <div class="event-more-flag">
+                        <span ng-hide="isflag1">111</span><span ng-hide="isflag2">11</span><span
+                            ng-hide="isflag3">111</span>
+                    </div>
+                    <p class="event-more-name">{{event.name}}</p>
+
+                    <p class="event-more-school"><i class="glyphicon glyphicon-user">&emsp13;</i>{{event.addr}}</p>
+
+                    <p class="event-more-time"><span class="glyphicon glyphicon-time">&emsp13;</span>{{event.time}}</p>
+                </div>
+            </a>
+        </li>
+        <div ng-show='SchoolEvent.busy'>Loading data...</div>
+    </ul>
+</div>
+<div id="h-back-cover" class="h-back-cover" ng-show="BackIsShow" ng-click="show('all')">
+
+</div>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>我的话题列表</title>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<div class="L-myTopicTitle">
+		<img src="img/back.png" id="L-backimg" style="width: 15px;height: 15px;" href=""/>
+		<div id="L-topic"><span id="L-collectName">我的话题</span></div>
+	</div>
+	    <div id="L-content4">
+		<!--话题列表-->
+		<ul class="L-topicList">
+			<li>
+				<div class="L-info">
+					<img src="img/photo.png" class="L-topicPhoto">
+					<div>
+						<p><span>万松居</span><img src="img/icon_girl.png"></p>
+						<p><i>苏州大学  昨日21:00</i></p>
+					</div>
+					<img class="L-delete" src="img/rubbish.png" width="15px" />
+				</div>
+				<!--话题-文字-->
+				<p class="L-topicText">这边风景读好</p>
+				<!--话题-配图-->
+				<div class="L-topicPic">
+					<img src="img/img4.jpg">
+					<img src="img/img4.jpg">
+					<img src="img/img4.jpg">
+				</div>
+				<!--话题-操作-->
+				<div class="L-topicOperat">
+					<img src="img/gift.png">
+					<span>55</span>
+					<img src="img/commend.png" class="L-commend">
+					<span>55</span>
+					<img src="img/zan.png">
+				</div>
+			</li>
+			<li>
+				<div class="L-info">
+					<img src="img/photo.png" class="L-topicPhoto">
+					<div>
+						<p><span>万松居</span><img src="img/icon_boy.png"></p>
+						<p><i>苏州大学  昨日21:00</i></p>
+					</div>
+					<img class="L-delete" src="img/rubbish.png" width="15px" />
+				</div>
+				<!--话题-文字-->
+				<p class="L-topicText">这边风景读好</p>
+				<!--话题-配图-->
+				<!--<div class="w-topicPic">
+					<img src="img/img4.jpg">
+					<img src="img/img4.jpg">
+					<img src="img/img4.jpg">
+				</div>-->
+				<!--话题-操作-->
+				<div class="L-topicOperat">
+					<img src="img/gift.png">
+					<span>55</span>
+					<img src="img/commend.png" class="L-commend">
+					<span>55</span>
+					<img src="img/zan.png">
+				</div>
+			</li>
+		</ul>
+	    </div>
+	</div>
+</body>
+</html>

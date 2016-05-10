@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html ng-app="pu">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "format-detection" content = "telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Title</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="bower_components/ng-infinite-scroll.min.js"> </script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div ng-controller="integrity">
+    <header class="integrity-header">
+        <p>
+            当前的诚信值
+        </p>
+        <p>111</p>
+        <p>规则：诚信值是通过学生参加活动的签到率来计算的，规则如下：诚信值=总签到数/活动总报名数
+            ；如：你共参加10场活动，实际签到5场，你的诚信值则为5/10=50%</p>
+    </header>
+    <div class="integrity-num clearfix">
+        <div class="integrity-total">
+            <p class="integrity-title">参加活动总数</p>
+            <p class="integrity-event-num">111</p>
+        </div>
+        <div class="integrity-signed">
+            <p class="integrity-title">活动总签到数</p>
+            <p class="integrity-event-num">111</p>
+        </div>
+    </div>
+    <div class="integrity-list">
+        <ul class="container">
+            <li class="to-event" data-eventid="">
+                <!--跳转活动-->
+                <!--<a class="row">-->
+                    <div class="integrity-pic pull-left">
+                       <img class="img-responsive" src="img/testimg.jpg">
+                    </div>
+                    <div class="integrity-school pull-left">
+                        <p>炉石传说高校联赛</p>
+                        <p>2015-09-28</p>
+                    </div>
+                    <!--<div class="col-xs-3 integrity-event-img">-->
+                        <!--<img class="img-responsive" src="img/testimg.jpg">-->
+                    <!--</div>-->
+                    <!--<div class="col-xs-6 integrity-event-name">-->
+                        <!--<p>123</p>-->
+                        <!--<p class="small color-eee">123</p>-->
+                    <!--</div>-->
+                    <div class="integrity-event-point pull-right">
+
+                        <p>已签到</p>
+                    </div>
+                    <!--<div class="col-xs-3 integrity-event-point pull-right">-->
+                        <!--<p class="integrity-no-sign">11</p>-->
+                        <!--<p>未签到</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            </li>
+            <li class="to-event" data-eventid="">
+                <!--跳转活动-->
+                <!--<a class="row">-->
+                <div class="integrity-pic pull-left">
+                    <img class="img-responsive" src="img/testimg.jpg">
+                </div>
+                <div class="integrity-school pull-left">
+                    <p>炉石传说高校联赛</p>
+                    <p>2015-09-28</p>
+                </div>
+                <!--<div class="col-xs-3 integrity-event-img">-->
+                <!--<img class="img-responsive" src="img/testimg.jpg">-->
+                <!--</div>-->
+                <!--<div class="col-xs-6 integrity-event-name">-->
+                <!--<p>123</p>-->
+                <!--<p class="small color-eee">123</p>-->
+                <!--</div>-->
+                <div class="integrity-event-point pull-right">
+
+                    <p>已签到</p>
+                </div>
+                <!--<div class="col-xs-3 integrity-event-point pull-right">-->
+                <!--<p class="integrity-no-sign">11</p>-->
+                <!--<p>未签到</p>-->
+                <!--</div>-->
+                <!--</a>-->
+            </li>
+            <li class="to-event" data-eventid="">
+                <!--跳转活动-->
+                <!--<a class="row">-->
+                <div class="integrity-pic pull-left">
+                    <img class="img-responsive" src="img/testimg.jpg">
+                </div>
+                <div class="integrity-school pull-left">
+                    <p>炉石传说高校联赛</p>
+                    <p>2015-09-28</p>
+                </div>
+                <div class="integrity-event-point liked pull-right">
+                <p>未签到</p>
+                </div>
+                <!--</a>-->
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

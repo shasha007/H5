@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script type="text/javascript" src="js/angular.min.js" ></script>
+    <script type="text/javascript" src="js/app.js" ></script>
+    <title>奖品明细</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body bgcolor="#F3F1EE" ng-app="awardDetailApp">
+	<!--可用券-->
+	<div class="L-award-list" ng-controller="myCtrl">
+	    <ul class="L-container">
+	        <li class="L-to-event" data-eventid="" ng-repeat="item in awardDetail">
+	            <!--跳转活动-->
+	           <div class="L-awardKfc">
+	                <div id="L-awardDetail">
+	                    <div class="L-award-pic">
+	                        <img class="L-img-award" src="{{item.icon}}">
+	                        <p id="L-awrdName">{{item.name}}</p>
+	                        <p id="L-awardQuan">{{item.awardname}}	</p>
+	              	    </div>
+	                    <div class="L-award-expired">
+	                	    <p><img src="img/event_time.png" width="12px"/>&nbsp;今天即将过期</p>
+	                    </div>
+	                </div>
+	                <div class="L-award-money">
+	                    <p id="L-awardM">￥{{item.money}}</p>
+	                </div>
+	            </div>
+	        </li>
+	        <!--区分栏-->
+	        <p id="L-awardExpeirdquan">不可用券</p>
+	</div>
+	<!--不可用券-->
+	<div class="L-award-list" ng-controller="myCtrl2">
+		<ul>
+	        <li class="L-to-event" data-eventid="" ng-repeat="item in notUsedDetail">
+	            <!--跳转活动-->
+	           <div class="L-awardKfc">
+	                <div id="L-awardDetail">
+	                    <div class="L-award-pic">
+	                        <img class="L-img-award" src="{{item.icon}}">
+	                        <p id="L-awrdName">{{item.name}}</p>
+	                        <p id="L-awardQuan">{{item.awardname}}	</p>
+	              	    </div>
+	                    <div class="L-award-expired">
+	                	    <!--<p ng-if="item.isExpired=='false'&&item.isUsed=='false'&&item.time==(today|date:'yyyy-MM-dd')"><img src="img/event_time.png" width="12px"/>&nbsp;今天即将过期</p>-->
+	                	    <p ng-if="item.isExpired=='true'&&item.isUsed=='false'"><img src="img/event_time.png" width="12px"/>&nbsp;已于{{item.time|date:'yyyy-MM-dd hh:mm:ss'}} 过期</p>
+	                	    <p ng-if="(item.isUsed=='true'&&item.isExpired=='true')||(item.isUsed=='true'&&item.isExpired=='false')"><img src="img/event_time.png" width="12px"/>&nbsp;已于{{item.time|date:'yyyy-MM-dd hh:mm:ss'}} 使用</p>
+	                    </div>
+	                </div>
+	                <div class="L-award-money">
+	                	<img ng-if="item.isExpired=='true'&&item.isUsed=='false'" id="L-img-expired" src="img/used.png"/>
+	                	<img ng-if="(item.isUsed=='true'&&item.isExpired=='true')||(item.isUsed=='true'&&item.isExpired=='false')" id="L-img-expired" src="img/expired.png"/>
+	                    <p id="L-awardM">￥{{item.money}}</p>
+	                </div>
+	            </div>
+	        </li>
+	    </ul>
+	</div>
+</body>
+</html>

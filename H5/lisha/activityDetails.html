@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="pu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>实际学分明细</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div ng-controller="L-integrity">
+    <header class="L-activity-header">
+        <p>
+            当前活动积分
+        </p>
+        <p>15&nbsp;<span id="L-score">分</span></p>
+        <p>注意：学分、积分只在活动完结后才会发放，以下显示的活动为完结的活动。未完结的活动请咨询活动发起人。</p>
+    </header>
+    <div class="L-integrity-list">
+        <ul class="container">
+            <li class="to-event" data-eventid="">
+                <!--跳转活动-->
+                <!--<a class="row">-->
+                    <div class="L-integrity-pic">
+                       <img class="L-img-responsive" src="img/img4.jpg">
+                    </div>
+                    <div class="L-integrity-school">
+                        <p>炉石传说高校联赛</p>
+                        <p id="L-integrity-date">2015-09-28</p>
+                    </div>
+                    <div class="L-integrity-event-point">
+                        <p>2.0<span id="L-score-integrity">分</span></p>
+                    </div>
+            </li>
+            <li class="to-event" data-eventid="">
+                <!--跳转活动-->
+                <!--<a class="row">-->
+                <div class="L-integrity-pic">
+                    <img class="L-img-responsive" src="img/img4.jpg" width="10%">
+                </div>
+                <div class="L-integrity-school">
+                    <p>炉石传说高校联赛</p>
+                    <p id="L-integrity-date">2015-09-28</p>
+                </div>
+                <div class="L-integrity-event-point">
+                    <p>2.0<span id="L-score-integrity">分</span></p>
+                </div>
+            </li>
+            <li class="to-event" data-eventid="">
+                <!--跳转活动-->
+                <!--<a class="row">-->
+                <div class="L-integrity-pic">
+                    <img class="L-img-responsive" src="img/img4.jpg" width="10%">
+                </div>
+                <div class="L-integrity-school">
+                    <p>炉石传说高校联赛</p>
+                    <p id="L-integrity-date">2015-09-28</p>
+                </div>
+                <div class="L-integrity-event-point">
+                <p>2.0<span id="L-score-integrity">分</span></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

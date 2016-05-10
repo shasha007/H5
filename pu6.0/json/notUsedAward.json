@@ -1,0 +1,5 @@
+[
+  {"name":"肯德基KFC","icon":"img/photo.png","awardname":"全场优惠券","money":"300","time":"2016-03-14","isExpired":"true","isUsed":"true"},
+  {"name":"肯德基KFC","icon":"img/photo.png","awardname":"全场优惠券","money":"300","time":"2015-02-14","isExpired":"true","isUsed":"false"},
+  {"name":"肯德基KFC","icon":"img/photo.png","awardname":"全场优惠券","money":"300","time":"2016-03-14","isExpired":"false","isUsed":"true"}  
+]

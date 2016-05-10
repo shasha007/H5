@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>我的评论列表</title>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<div class="L-myTopicTitle">
+		<img src="img/back.png" id="L-backimg" style="width: 15px;height: 15px;" href=""/>
+		<div id="L-topic">
+			<span id="L-collectName">所有评论</span>
+			<input id="L-commendShow" type="button" value="∧" onclick="showComment();"/>
+		</div>
+	</div>
+	    <div id="L-content4">
+		<!--话题列表-->
+		<ul class="L-topicList">
+			<li>
+				<p>我发出的</p>
+				<div class="L-info">
+					<img src="img/photo.png" class="L-topicPhoto">
+					<div>
+						<p>英雄联盟</p>
+						<p><i>15-10-30 17:09 来自PU</i></p>
+					</div>
+					<!--评论-文字-->
+					<div id="L-commendMy">
+					回复&nbsp;<span><font color="red">@道一_LASHAUN:</font>时间不重要 要找肌肉感觉</span>
+					<p><font color="red">@道一_LASHAUN:</font><span id="L-lastcommment">212节奏法，这个我想过增肌肉想法的人都了解过。上面停两秒，下去一秒，下面撑两秒。这个节奏法非常实用。但现在很多人太信封这个原则了</span></p>
+					</div>
+				</div>
+				<!--评论-相关-->
+				<div class="L-topicPic">
+					<img src="img/img4.jpg">
+					<span>@英雄联盟</span>
+					<p id="L-commmentdetail">#苏州身边事 【昆山第一商业综合体-就放狗物中心今日开业啦！】昆山有印象城，昆山有</p>
+				</div>
+			</li>
+			<li>
+				<p>评论我的</p>
+				<div class="L-info">
+					<img src="img/photo.png" class="L-topicPhoto">
+					<div>
+						<p>英雄联盟</p>
+						<p><i>15-10-30 17:09 来自PU</i></p>
+					</div>
+					<!--评论-文字-->
+					<div id="L-commendMy">
+						<span>你知道，这听起来像来自外太空的音乐</span>
+					</div>
+				</div>
+				<!--评论-相关-->
+				<div class="L-topicPic">
+					<img src="img/img4.jpg">
+					<span>@英雄联盟</span>
+					<p id="L-commmentdetail">#苏州身边事 【昆山第一商业综合体-就放狗物中心今日开业啦！】昆山有印象城，昆山有</p>
+				</div>
+			</li>
+		</ul>
+	    </div>
+	</div>
+</body>
+</html>

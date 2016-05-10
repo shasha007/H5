@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>使用帮助</title>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="L-useHelptitle">
+		<img src="img/back.png" style="width: 15px;height: 15px;"/>
+		<div><center>帮助</center></div>
+	</div>
+	<div class="L-useHelp"></div>
+	<div class="L-context">
+		<ul>
+			<li class="L-dom">
+				<p id="p1">
+					<span id="tag1">1.PU是什么？</span>
+					<a href="" id="a1" class="L-a" style="display: block;float: right;">></a>
+				</p>
+				<div>aaaa</div>
+			</li>
+			<li class="L-dom">
+				<p id="p2">
+					<span id="tag2">2.PU平台有什么用？</span>
+					<a href="" id="a2" class="L-a" style="display: block;float: right;">></a>
+				</p>
+				<div>bbb</div>
+			</li>
+			<li class="L-dom">
+				<p id="p3">
+					<span id="tag3">3.无法发起活动</span>
+					<a href="" id="a3" class="L-a" style="display: block;float: right;">></a>
+				</p>
+				<div>cccc</div>
+			</li>
+			<li class="L-dom">
+				<p id="p4">
+					<span id="tag4">4.客户端首次登录</span>
+					<a href="" id="a4" class="L-a" style="display: block;float: right;">></a>
+				</p>
+				<div>dddd</div>
+			</li>
+			<li class="L-dom">
+				<p id="p5">
+					<span id="tag5">5.更换头像</span>
+					<a href="" id="a5" class="L-a" style="display: block;float: right;" onclick="">></a>
+				</p>
+				<div>dddd</div>
+			</li>
+			<li class="L-dom">
+				<p id="p6">
+					<span id="tag6">6.平台与其它社交网站的区别？</span>
+					<a href="" id="a6" class="L-a" style="display: block;float: right;">></a>
+				</p>
+				<div>eeee</div>
+			</li>
+			<li class="L-dom">
+				<p id="p7">
+					<span id="tag7">7.如何创建团队</span>
+					<a href="" id="a7" class="L-a" style="display: block;float: right;">></a>
+				</p>
+				<div>ffffe</div>
+			</li>
+			<li class="L-dom">
+				<p id="p8">
+					<span id="tag8">8.学分与积分如何获取？</span>
+					<a href="" id="a8" class="L-a" style="display: block;float: right;">></a>
+				</p>
+				<div>gggg</div>
+			</li>
+			<li class="L-dom">
+				<p id="p9">
+					<span id="tag9">9.忘记密码怎么办？</span>
+					<a href="" id="a9" class="L-a" style="display: block;float: right;">></a>
+				</p>
+				<div>qqq</div>
+			</li>
+		</ul>
+	</div>
+</body>
+<script language="javascript"> 
+	//【1.PU是什么？】隐藏显示设置
+	var dom=document.getElementsByClassName("L-dom")[0];
+	var slide=dom.getElementsByTagName("div")[0];
+	dom.addEventListener("click",function(){
+		if(!slide.style.height){
+			//显示内容
+			slide.style.height="auto";
+			//箭头变成向下
+			var htmlstr = "∨"; 
+			document.getElementById('a1').innerHTML=htmlstr;
+			//背景色变黄,黄色背景高度，字体颜色变白
+			document.getElementById("p1").style.backgroundColor="orangered";
+			document.getElementById("p1").style.height="40px";
+			document.getElementById("tag1").style.color="white";
+			document.getElementById("a1").style.color="white";
+		}else{
+			//隐藏内容
+			slide.style.height="0px";
+			//箭头变回
+			var htmlstr = ">"; 
+			document.getElementById('a1').innerHTML=htmlstr;
+			//标题背景，高度，字体变回
+			document.getElementById("p1").style.backgroundColor="white";
+			document.getElementById("p1").style.height="5px";
+			document.getElementById("tag1").style.color="black";
+			document.getElementById("a1").style.color="black";
+		}
+	});
+	//【2.PU平台有什么用？】隐藏显示设置
+	var dom2=document.getElementsByClassName("L-dom")[1];
+	var slide2=dom2.getElementsByTagName("div")[0];
+	dom2.addEventListener("click",function(){
+		if(!slide2.style.height){
+			//显示内容
+			slide2.style.height="auto";
+			//箭头变成向下
+			var htmlstr = "∨"; 
+			document.getElementById('a2').innerHTML=htmlstr;
+			//背景色变黄,黄色背景高度，字体颜色变白
+			document.getElementById("p2").style.backgroundColor="orangered";
+			document.getElementById("p2").style.height="40px";
+			document.getElementById("tag2").style.color="white";
+			document.getElementById("a2").style.color="white";
+		}else{
+			//隐藏内容
+			slide2.style.height="0px";
+			//箭头变回
+			var htmlstr = ">"; 
+			document.getElementById('a2').innerHTML=htmlstr;
+			//标题背景，高度，字体变回
+			document.getElementById("p2").style.backgroundColor="white";
+			document.getElementById("p2").style.height="5px";
+			document.getElementById("tag2").style.color="black";
+			document.getElementById("a2").style.color="black";
+		}
+	});
+	//【3.无法发起活动】隐藏显示设置
+	var dom3=document.getElementsByClassName("L-dom")[2];
+	var slide3=dom3.getElementsByTagName("div")[0];
+	dom3.addEventListener("click",function(){
+		if(!slide3.style.height){
+			//显示内容
+			slide3.style.height="auto";
+			//箭头变成向下
+			var htmlstr = "∨"; 
+			document.getElementById('a3').innerHTML=htmlstr;
+			//背景色变黄,黄色背景高度，字体颜色变白
+			document.getElementById("p3").style.backgroundColor="orangered";
+			document.getElementById("p3").style.height="40px";
+			document.getElementById("tag3").style.color="white";
+			document.getElementById("a3").style.color="white";
+		}else{
+			//隐藏内容
+			slide3.style.height="0px";
+			//箭头变回
+			var htmlstr = ">"; 
+			document.getElementById('a3').innerHTML=htmlstr;
+			//标题背景，高度，字体变回
+			document.getElementById("p3").style.backgroundColor="white";
+			document.getElementById("p3").style.height="5px";
+			document.getElementById("tag3").style.color="black";
+			document.getElementById("a3").style.color="black";
+		}
+	});
+	//【4.客户端首次登录】隐藏显示设置
+	var dom4=document.getElementsByClassName("L-dom")[3];
+	var slide4=dom4.getElementsByTagName("div")[0];
+	dom4.addEventListener("click",function(){
+		if(!slide4.style.height){
+			//显示内容
+			slide4.style.height="auto";
+			//箭头变成向下
+			var htmlstr = "∨"; 
+			document.getElementById('a4').innerHTML=htmlstr;
+			//背景色变黄,黄色背景高度，字体颜色变白
+			document.getElementById("p4").style.backgroundColor="orangered";
+			document.getElementById("p4").style.height="40px";
+			document.getElementById("tag4").style.color="white";
+			document.getElementById("a4").style.color="white";
+		}else{
+			//隐藏内容
+			slide4.style.height="0px";
+			//箭头变回
+			var htmlstr = ">"; 
+			document.getElementById('a4').innerHTML=htmlstr;
+			//标题背景，高度，字体变回
+			document.getElementById("p4").style.backgroundColor="white";
+			document.getElementById("p4").style.height="5px";
+			document.getElementById("tag4").style.color="black";
+			document.getElementById("a4").style.color="black";
+		}
+	});
+	//【5.更换头像】隐藏显示设置
+	var dom5=document.getElementsByClassName("L-dom")[4];
+	var slide5=dom5.getElementsByTagName("div")[0];
+	dom5.addEventListener("click",function(){
+		if(!slide5.style.height){
+			//显示内容
+			slide5.style.height="auto";
+			//箭头变成向下
+			var htmlstr = "∨"; 
+			document.getElementById('a5').innerHTML=htmlstr;
+			//背景色变黄,黄色背景高度，字体颜色变白
+			document.getElementById("p5").style.backgroundColor="orangered";
+			document.getElementById("p5").style.height="40px";
+			document.getElementById("tag5").style.color="white";
+			document.getElementById("a5").style.color="white";
+		}else{
+			//隐藏内容
+			slide5.style.height="0px";
+			//箭头变回
+			var htmlstr = ">"; 
+			document.getElementById('a5').innerHTML=htmlstr;
+			//标题背景，高度，字体变回
+			document.getElementById("p5").style.backgroundColor="white";
+			document.getElementById("p5").style.height="5px";
+			document.getElementById("tag5").style.color="black";
+			document.getElementById("a5").style.color="black";
+		}
+	});
+	//【6.平台与其它社交网站的区别】隐藏显示设置
+	var dom6=document.getElementsByClassName("L-dom")[5];
+	var slide6=dom6.getElementsByTagName("div")[0];
+	dom6.addEventListener("click",function(){
+		if(!slide6.style.height){
+			//显示内容
+			slide6.style.height="auto";
+			//箭头变成向下
+			var htmlstr = "∨"; 
+			document.getElementById('a6').innerHTML=htmlstr;
+			//背景色变黄,黄色背景高度，字体颜色变白
+			document.getElementById("p6").style.backgroundColor="orangered";
+			document.getElementById("p6").style.height="40px";
+			document.getElementById("tag6").style.color="white";
+			document.getElementById("a6").style.color="white";
+		}else{
+			//隐藏内容
+			slide6.style.height="0px";
+			//箭头变回
+			var htmlstr = ">"; 
+			document.getElementById('a6').innerHTML=htmlstr;
+			//标题背景，高度，字体变回
+			document.getElementById("p6").style.backgroundColor="white";
+			document.getElementById("p6").style.height="5px";
+			document.getElementById("tag6").style.color="black";
+			document.getElementById("a6").style.color="black";
+		}
+	});
+	//【7.如何创建团队】隐藏显示设置
+	var dom7=document.getElementsByClassName("L-dom")[6];
+	var slide7=dom7.getElementsByTagName("div")[0];
+	dom7.addEventListener("click",function(){
+		if(!slide7.style.height){
+			//显示内容
+			slide7.style.height="auto";
+			//箭头变成向下
+			var htmlstr = "∨"; 
+			document.getElementById('a7').innerHTML=htmlstr;
+			//背景色变黄,黄色背景高度，字体颜色变白
+			document.getElementById("p7").style.backgroundColor="orangered";
+			document.getElementById("p7").style.height="40px";
+			document.getElementById("tag7").style.color="white";
+			document.getElementById("a7").style.color="white";
+		}else{
+			//隐藏内容
+			slide7.style.height="0px";
+			//箭头变回
+			var htmlstr = ">"; 
+			document.getElementById('a7').innerHTML=htmlstr;
+			//标题背景，高度，字体变回
+			document.getElementById("p7").style.backgroundColor="white";
+			document.getElementById("p7").style.height="5px";
+			document.getElementById("tag7").style.color="black";
+			document.getElementById("a7").style.color="black";
+		}
+	});
+	//【8.学分与积分如何获取】隐藏显示设置
+	var dom8=document.getElementsByClassName("L-dom")[7];
+	var slide8=dom8.getElementsByTagName("div")[0];
+	dom8.addEventListener("click",function(){
+		if(!slide8.style.height){
+			//显示内容
+			slide8.style.height="auto";
+			//箭头变成向下
+			var htmlstr = "∨"; 
+			document.getElementById('a8').innerHTML=htmlstr;
+			//背景色变黄,黄色背景高度，字体颜色变白
+			document.getElementById("p8").style.backgroundColor="orangered";
+			document.getElementById("p8").style.height="40px";
+			document.getElementById("tag8").style.color="white";
+			document.getElementById("a8").style.color="white";
+		}else{
+			//隐藏内容
+			slide8.style.height="0px";
+			//箭头变回
+			var htmlstr = ">"; 
+			document.getElementById('a8').innerHTML=htmlstr;
+			//标题背景，高度，字体变回
+			document.getElementById("p8").style.backgroundColor="white";
+			document.getElementById("p8").style.height="5px";
+			document.getElementById("tag8").style.color="black";
+			document.getElementById("a8").style.color="black";
+		}
+	});
+	//【9.忘记密码怎么办】隐藏显示设置
+	var dom9=document.getElementsByClassName("L-dom")[8];
+	var slide9=dom9.getElementsByTagName("div")[0];
+	dom9.addEventListener("click",function(){
+		if(!slide9.style.height){
+			//显示内容
+			slide9.style.height="auto";
+			//箭头变成向下
+			var htmlstr = "∨"; 
+			document.getElementById('a9').innerHTML=htmlstr;
+			//背景色变黄,黄色背景高度，字体颜色变白
+			document.getElementById("p9").style.backgroundColor="orangered";
+			document.getElementById("p9").style.height="40px";
+			document.getElementById("tag9").style.color="white";
+			document.getElementById("a9").style.color="white";
+		}else{
+			//隐藏内容
+			slide9.style.height="0px";
+			//箭头变回
+			var htmlstr = ">"; 
+			document.getElementById('a9').innerHTML=htmlstr;
+			//标题背景，高度，字体变回
+			document.getElementById("p9").style.backgroundColor="white";
+			document.getElementById("p9").style.height="5px";
+			document.getElementById("tag9").style.color="black";
+			document.getElementById("a9").style.color="black";
+		}
+	});
+</script> 
+</html>

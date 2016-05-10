@@ -1,0 +1,160 @@
+<div class="square-list">
+    <ul>
+        <li class="square-list-li container" data-topicids="">
+            <header class="clearfix">
+                <!--跳转个人主页-->
+                <div class="square-li-l"><a
+                        data-userid=""><img class="img-responsive" src="img/testimg.jpg"></a>
+                </div>
+                <div class="square-li-c">
+                    <!--todo-->
+                    <!--有female和male两个class 根据性别的不同span的class也需要改变-->
+                    <div class="clearfix">
+                    <p>哈哈哈哈哈哈哈哈哈哈&emsp13;
+                    </p>
+                        <i class="female">♀</i>
+                    </div>
+                    <p><span>四川外语大学重庆南方翻译学院</span></p>
+                </div>
+                <!--<div class="square-li-addfirend"><span class=" added-friend" style="color: #ccc;border: 1px solid #ccc;">已添加</span></div>-->
+                <!--<div class="square-li-addfirend"><span onclick="">+好友</span></div>-->
+                <div class="square-li-addfirend">
+                    <span onclick="">删除</span>
+                </div>
+            </header>
+            <a class="" data-weiboidd="" href="">
+                <div class="square-li-con">
+                    <span class='tips-toutiao'>头条</span>内容
+                    内容内容内容内容内容内容内容内容内容内容内容
+                </div>
+                <div>
+                </div>
+                <div class="square-li-pic container">
+                    <div class="row">
+                        <!--只有一个图片的情况 todo-->
+                        <div class="col-my-12">
+                            <img class="img-responsive" src="img/testimg.jpg">
+                        </div>
+                        <div class="col-my-12">
+                            <img class="img-responsive" src="img/testimg.jpg">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <footer class="clearfix">
+                <div class="pull-left small">昨日20:10</div>
+            </footer>
+        </li>
+        <!--底部评论-->
+        <div class="weibo-button container">
+            <!--&lt;!&ndash;点赞&ndash;&gt;-->
+            <!--&lt;!&ndash;<?php if($info['weibo_favourite'] == 0){ ?>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="collect-topic" id="collect" data-collectstatus="1"&ndash;&gt;-->
+                 <!--&lt;!&ndash;data-collectid="<?php echo $info['weibo_id'] ; ?>">&ndash;&gt;-->
+                <!--&lt;!&ndash;<span class="glyphicon glyphicon-star-empty">收藏</span>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<?php }else{ ?>&ndash;&gt;-->
+            <!--<div class="collect-topic collected" id="collect" data-collectstatus="2"-->
+                 <!--data-collectid="<?php echo $info['weibo_id'] ; ?>">-->
+                <!--<span class="glyphicon glyphicon-star-empty">已收藏</span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;<?php } ?>&ndash;&gt;-->
+            <!--&lt;!&ndash;收藏&ndash;&gt;-->
+            <!--<div>-->
+                <!--<span class='glyphicon glyphicon-heart liked' data-status='0' data-weiboid=''>&emsp13;11</span>-->
+                <!--&lt;!&ndash;<span class='glyphicon glyphicon-heart' data-status='1' data-weiboid=''>&emsp13;$info[heart]</span>"&ndash;&gt;-->
+            <!--</div>-->
+            <!--&lt;!&ndash;评论按钮&ndash;&gt;-->
+            <!--<div id="comment-topic" data-topicid=''>-->
+                <!--评论-->
+            <!--</div>-->
+            <div class="weibo-button-1">
+                <p><img class="img-responsive" src="img/presented.png"></p>
+                <p class="liked">188</p>
+            </div>
+            <div class="weibo-button-2 pull-right text-right">
+                <p >188</p>
+                <p><img class="img-responsive" src="img/comment.png"></p>
+            </div>
+            <div class="weibo-button-2 pull-right text-right">
+                <p class="liked">188</p>
+                <p><img class="img-responsive" src="img/hearted.png"></p>
+            </div>
+        </div>
+    </ul>
+</div>
+<div class="square_comment">
+    <span class="glyphicon glyphicon-comment"> </span><span>&emsp13;&emsp13;&emsp13;11
+    条评论</span>
+    <ul class="square_comment_list">
+        <li class="square-comment-list-li clearfix">
+            <header class="clearfix">
+                <div class="square-li-l"><a
+                    data-userid="">
+                    <img class="img-responsive" src="img/testimg.jpg"></a></div>
+                <div class="square-li-c">
+                    <div class="clearfix">
+                    <p>
+                        哈哈哈哈哈哈哈哈哈哈哈哈哈
+                       <!--<span class="female">♀</span>-->
+                    </p>
+                    <i class="male">♂</i>
+                        </div>
+                    <p class="cleanfix"><span>四川外语大学重庆南方翻译学院</span></p>
+                </div>
+                <div class="square-li-r">
+                    <!--<img class='img-responsive comment-comment pull-right'  data-topicid='$info[weibo_id]' data-commentid='' data-nickname='' src='img/icon_reply.png'>-->
+                   <i class='glyphicon glyphicon-trash' onclick=''></i>
+                </div>
+            </header>
+            <div class="square-comment-list-li-con ">
+                评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论
+                评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论
+            </div>
+            <p class="pull-right publish-time clearfix">2015-10-20 15:00</p>
+        </li>
+        <li class="square-comment-list-li clearfix">
+            <header class="clearfix">
+                <div class="square-li-l"><a
+                        data-userid="">
+                    <img class="img-responsive" src="img/testimg.jpg"></a></div>
+                <div class="square-li-c">
+                    <div class="clearfix">
+                    <p>
+                        哈哈哈哈哈哈哈哈哈哈哈哈哈
+                        <!--<span class="female">♀</span>-->
+                    </p>
+                        <i class="female">♂</i>
+                    </div>
+                    <p><span>四川外语大学重庆南方翻译学院</span></p>
+                </div>
+                <div class="square-li-r">
+                    <img class='img-responsive comment-comment pull-right'  data-topicid='$info[weibo_id]' data-commentid='' data-nickname='' src='img/icon_reply.png'>
+                    <!--<i class='glyphicon glyphicon-trash' onclick=''></i>-->
+                </div>
+            </header>
+            <div class="square-comment-list-li-con weibo-reply-color">
+                回复@哈哈哈哈哈哈哈哈哈哈哈哈哈 : 评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论
+                评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论
+            </div>
+            <p class="pull-right publish-time clearfix">2015-10-20 15:00</p>
+        </li>
+    </ul>
+</div>
+<div class="modal fade" id="delete">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                是否删除评论?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">取消
+                </button>
+                <button id="delete-topic" type="button" class="btn btn-primary">
+                    删除
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

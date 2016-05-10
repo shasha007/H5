@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="pu">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "format-detection" content = "telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Title</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="bower_components/ng-infinite-scroll.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div ng-controller="mygift">
+    <header class="h-mygift-header">
+        <ul class="container">
+            <li>
+                <p>3000</p>
+                <img class="img-responsive" src="img/testimg.jpg">
+            </li>
+            <li>
+                <p>3000</p>
+                <img class="img-responsive" src="img/testimg.jpg">
+            </li>
+            <li>
+                <p>3000</p>
+                <img class="img-responsive" src="img/testimg.jpg">
+            </li>
+        </ul>
+    </header>
+    <div class="h-mygift-person container">
+        <header class="clearfix">
+            <p><img class="img-responsive" src="img/testimg.jpg"></p>
+            <p>礼物来源</p>
+        </header>
+        <ul>
+            <li class="clearfix">
+                <div class="h-mygift-person-img">
+                    <img class="img-responsive" src="img/testimg.jpg">
+                </div>
+                <div class="h-mygift-person-con">
+                    <p>阿曼</p>
+                    <p>送了<span class="h-mygift-num">2</span>只可爱的熊宝宝</p>
+                </div>
+                <div class="h-mygift-person-btn">
+                    回赠
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="h-mygift-person-img">
+                    <img class="img-responsive" src="img/testimg.jpg">
+                </div>
+                <div class="h-mygift-person-con">
+                    <p>阿曼</p>
+                    <p>送了<span class="h-mygift-num">2</span>只可爱的熊宝宝</p>
+                </div>
+                <div class="h-mygift-person-btn">
+                    回赠
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="h-mygift-person-img">
+                    <img class="img-responsive" src="img/testimg.jpg">
+                </div>
+                <div class="h-mygift-person-con">
+                    <p>阿曼</p>
+                    <p>送了<span class="h-mygift-num">2</span>只可爱的熊宝宝</p>
+                </div>
+                <div class="h-mygift-person-btn">
+                    回赠
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="h-mygift-person-img">
+                    <img class="img-responsive" src="img/testimg.jpg">
+                </div>
+                <div class="h-mygift-person-con">
+                    <p>阿曼</p>
+                    <p>送了<span class="h-mygift-num">2</span>只可爱的熊宝宝</p>
+                </div>
+                <div class="h-mygift-person-btn">
+                    回赠
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

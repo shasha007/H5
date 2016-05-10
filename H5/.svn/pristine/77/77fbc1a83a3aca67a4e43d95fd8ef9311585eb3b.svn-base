@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>关于PU</title>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="L-aboutPUtitle">
+		<img src="img/back.png" style="width: 15px;height: 15px;"/>
+		<div>关于PU</div>
+	</div>
+	<div class="L-pu-image">
+		<center><img src="img/logo_1.png" style="width: 65px;height: 65px;"/></center>
+	</div>
+	<div class="L-pu-vertion">
+		<center>PU口袋校园6.0版</center>
+	</div>
+	<div class="L-content">
+		<ul>
+			<li>
+				<p>
+					<span>去评分</span>
+					<a href="" class="L-a" style="display: block;float: right;">></a>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span>检测更新</span>
+					<a href="" class="L-a" style="display: block;float: right;">6.0版&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span>清楚缓存</span>
+					<a href="" class="L-a" style="display: block;float: right;">></a>
+				</p>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

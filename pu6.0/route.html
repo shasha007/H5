@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<style>
+			*{margin: 0;padding: 0;}
+			ul,li{list-style: none;}
+		</style>
+	</head>
+	<body>
+		<div class="container" ng-app="myApp">
+			<!--各跳转页面模板-->
+			<!--主页面--列表-->
+			<script type="text/ng-template" id="list.html">
+				<table class="table table-bordered table-condensed">
+					<tr>
+						<td>ID</td>
+						<td>标题</td>
+						<td>内容</td>
+						<td>发布时间</td>
+					</tr>
+					<tr ng-repeat="news in newsList">
+						<td>{{news.id}}</td>
+						<td><a href="#/details/{{news.id}}">{{news.title}}</a></td>
+						<td>{{news.content}}</td>
+						<td>{{news.time | date:'medium'}}</td>
+					</tr>
+				</table>
+			</script>
+			<!--新闻详情-->
+			<script type="text/ng-template" id="details.html">
+				<a href="#/list">返回列表</a>
+				<a href="#/edit/{{news.id}}">编辑</a>
+				<h3>{{news.title}}</h3>
+				<h5>日期:{{news.time}}</h5>
+				<div>内容:{{news.content}}</div>
+			</script>
+			<!--添加新闻-->
+			<!--<script type="text/ng-template" id="add.html">
+				<p>标题:<input type="text" ng-model="title"/></p>
+				<div>内容:<textarea ng-model="content"></textarea></div>
+				<button class="btn btn-success" ng-click="add()">添加新闻</button>
+			</script>-->
+			<!--编辑新闻-->
+			<script type="text/ng-template" id="edit.html">
+				<p>标题:<input type="text" ng-model="news.title"/></p>
+				<div>内容:<textarea ng-model="news.content"></textarea></div>
+				<button class="btn btn-success" ng-click="update()">保存</button>
+			</script>
+			<div class="row">
+				<div class="col-xs-4 col-sm-6 col-md-6">
+					<ul>
+						<li><a href="#/list">新闻列表</a></li>
+						<li><a href="#/add">添加新闻</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-8 col-sm-6 col-md-6">
+					<div ng-view></div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	<script src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.min.js" ></script>
+	<script>
+		var newsList=[
+				{
+					id:1,
+					title:"title1",
+					content:"内容1内容1内容1内容1",
+					time:new Date()
+				},
+				{
+					id:2,
+					title:"title2",
+					content:"内容2内容1内容1内容1",
+					time:new Date()
+				},
+				{
+					id:3,
+					title:"title3",
+					content:"内容3内容1内容1内容1",
+					time:new Date()
+				},
+				{
+					id:4,
+					title:"title4",
+					content:"内容4内容4内容1内容1",
+					time:new Date()
+				}
+			];
+		var app=angular.module("myApp",["ngRoute"]);
+		app.config(function($routeProvider){
+			$routeProvider.
+				when("/",{
+					templateUrl:"list.html",
+					controller:"listController"
+				}).
+				when("/details/:id",{
+					templateUrl:"details.html",
+					controller:"detailController"
+				}).
+				when("/list",{
+					templateUrl:"list.html",
+					controller:"listController"
+				}).
+				when("/add",{
+					templateUrl:"add.html",
+					controller:"addController"
+				}).
+				when("/edit/:id",{
+					templateUrl:"edit.html",
+					controller:"editController"
+				})
+		});
+		app.controller("listController",function($scope){
+			$scope.newsList=newsList;
+		});
+		app.controller("detailController",function($scope,$routeParams){
+			$scope.news=newsList[$routeParams.id-1];
+		});
+		app.controller("addController",function($scope,$location){
+			$scope.add=function(){
+				var addNews={
+					id:newsList.length+1,
+					title:$scope.title,
+					content:$scope.content,
+					time:new Date()
+				}
+				newsList.push(addNews);
+			$location.path("/list");
+			}
+		});
+		app.controller("editController",function($scope,$routeParams,$location){
+			$scope.news=newsList[$routeParams.id-1];
+			$scope.update=function(){
+				newsList[$routeParams.id-1]=$scope.news;
+				$location.path("/list");
+			}
+		});
+	</script>
+</html>

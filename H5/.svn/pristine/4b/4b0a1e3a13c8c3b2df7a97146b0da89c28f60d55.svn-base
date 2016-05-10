@@ -1,0 +1,174 @@
+{
+  "code": 1,
+  "msg": "成功",
+  "content": [
+    {
+      "userCode ": "1",
+      "nickName": "昵称13",
+      "schoolName": "学校名称1",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "1"
+    },
+    {
+      "userCode ": "2",
+      "nickName": "昵称2",
+      "schoolName": "学校名称2",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "1"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "3",
+      "nickName": "昵称3",
+      "schoolName": "学校名称3",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    },
+    {
+      "userCode ": "4",
+      "nickName": "昵称4",
+      "schoolName": "学校名称4",
+      "picUrl": "img/testimg.jpg",
+      "grade": "2015",
+      "isFriend": "0"
+    }
+  ]
+}

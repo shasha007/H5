@@ -1,0 +1,6 @@
+[
+  {"name":"阿1","school":"学校名称1","time":"昨日21:00","icon":"img/photo.png","content":"这边风景读好","sex":"boy","praiseNum":"8","commentNum":"4","giftNum":"6","imgs":["img/img4.jpg","img/img4.jpg","img/img4.jpg"]},
+  {"name":"阿2","school":"学校名称2","time":"2016-11-23","icon":"img/photo.png","content":"这边风景读好2","sex":"girl","praiseNum":"9","commentNum":"5","giftNum":"7","imgs":["img/img4.jpg","img/img4.jpg","img/img4.jpg"]},
+  {"name":"阿3","school":"学校名称3","time":"2016-11-24","icon":"img/photo.png","content":"这边风景读好3","sex":"boy","praiseNum":"10","commentNum":"6","giftNum":"8","imgs":["img/img4.jpg","img/img4.jpg","img/img4.jpg"]},
+  {"name":"阿4","school":"学校名称4","time":"2016-11-25","icon":"img/photo.png","content":"这边风景读好4","sex":"boy","praiseNum":"11","commentNum":"7","giftNum":"9","imgs":["img/img4.jpg","img/img4.jpg","img/img4.jpg"]}
+]

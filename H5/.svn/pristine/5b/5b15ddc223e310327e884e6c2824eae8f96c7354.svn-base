@@ -1,0 +1,163 @@
+<div class="entertainment-list">
+    <header>
+        <div class="entert-search clearfix">
+        <img  class="img-responsive" src="img/search.png" ng-click="setsearch()" ng-class="{entert_searched:search}">
+        <input class="entertainment-search" placeholder="游戏和攻略" ng-blur="setsearch()"   ng-class="{entert_input_searched:search}" ng-focus="setsearch()">
+        </div>
+    </header>
+    <div class="entertainment-person">
+        <div class="container">
+        <div class="pull-left entertainment-person-l">
+            <img class="img-responsive" src="img/testimg.jpg">
+        </div>
+        <div class="pull-left entertainment-person-r" >
+            <p>spring</p>
+            <p>下午好,动动手指,找回快乐吧~</p>
+        </div>
+        </div>
+    </div>
+    <div class="entertainment-top entert-color-1">
+        <header class="container">
+            尽情玩耍
+        </header>
+        <ul>
+            <li class="container clearfix">
+                <div class="pull-left entert-img"><img class="img-responsive" src="img/testimg.jpg"></div>
+                <div class="pull-left entert-name">
+                    <p>钢琴大师</p>
+                    <p>试试你的手指够不够灵活!</p>
+                </div>
+                <div class="entert-button pull-right">
+                    <div>进入</div>
+                </div>
+            </li>
+            <li class="container clearfix">
+                <div class="pull-left entert-img"><img class="img-responsive" src="img/testimg.jpg"></div>
+                <div class="pull-left entert-name">
+                    <p>钢琴大师</p>
+                    <p>试试你的手指够不够灵活!</p>
+                </div>
+                <div class="entert-button pull-right">
+                    <div>进入</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="entertainment-top">
+        <header class="container">
+            精品游戏畅销榜
+        </header>
+        <ul class="entert-colors">
+            <li class="container clearfix">
+                <div class="enter-no pull-left">1</div>
+                <div class="entert-img pull-left"><img class="img-responsive" src="img/testimg.jpg"></div>
+                <div class="entert-name pull-left ">
+                    <p>钢琴大师</p>
+                    <p>试试你的手指够不够灵活!</p>
+                </div>
+                <div class="entert-button pull-right">
+                    <div>进入</div>
+                </div>
+            </li>
+            <li class="container clearfix">
+                <div class="enter-no pull-left">1</div>
+                <div class="entert-img pull-left"><img class="img-responsive" src="img/testimg.jpg"></div>
+                <div class="entert-name pull-left">
+                    <p>钢琴大师</p>
+                    <p>试试你的手指够不够灵活!</p>
+                </div>
+                <div class="entert-button pull-right">
+                    <div>进入</div>
+                </div>
+            </li>
+            <li class="container clearfix">
+                <div class="enter-no pull-left">1</div>
+                <div class="entert-img pull-left"><img class="img-responsive" src="img/testimg.jpg"></div>
+                <div class="entert-name pull-left">
+                    <p>钢琴大师</p>
+                    <p>试试你的手指够不够灵活!</p>
+                </div>
+                <div class="entert-button pull-right">
+                    <div>进入</div>
+                </div>
+            </li>
+            <li class="container clearfix">
+                <div class="enter-no pull-left">1</div>
+                <div class="entert-img pull-left"><img class="img-responsive" src="img/testimg.jpg"></div>
+                <div class="entert-name pull-left">
+                    <p>钢琴大师</p>
+                    <p>试试你的手指够不够灵活!</p>
+                </div>
+                <div class="entert-button pull-right">
+                    <div>进入</div>
+                </div>
+            </li>
+            <li class="container clearfix">
+                <div class="enter-no pull-left">1</div>
+                <div class="entert-img pull-left"><img class="img-responsive" src="img/testimg.jpg"></div>
+                <div class="entert-name pull-left">
+                    <p>钢琴大师</p>
+                    <p>试试你的手指够不够灵活!</p>
+                </div>
+                <div class="entert-button pull-right">
+                    <div>进入</div>
+                </div>
+            </li>
+            <li class="container clearfix">
+                <div class="enter-no pull-left">1</div>
+                <div class="entert-img pull-left"><img class="img-responsive" src="img/testimg.jpg"></div>
+                <div class="entert-name pull-left">
+                    <p>钢琴大师</p>
+                    <p>试试你的手指够不够灵活!</p>
+                </div>
+                <div class="entert-button pull-right">
+                    <div>进入</div>
+                </div>
+            </li>
+            <li class="container clearfix">
+                <div class="enter-no pull-left">1</div>
+                <div class="entert-img pull-left"><img class="img-responsive" src="img/testimg.jpg"></div>
+                <div class="entert-name pull-left">
+                    <p>钢琴大师</p>
+                    <p>试试你的手指够不够灵活!</p>
+                </div>
+                <div class="entert-button pull-right">
+                    <div>进入</div>
+                </div>
+            </li>
+            <li class="container clearfix">
+                <div class="enter-no pull-left">1</div>
+                <div class="entert-img pull-left"><img class="img-responsive" src="img/testimg.jpg"></div>
+                <div class="entert-name pull-left">
+                    <p>钢琴大师</p>
+                    <p>试试你的手指够不够灵活!</p>
+                </div>
+                <div class="entert-button pull-right">
+                    <div>进入</div>
+                </div>
+            </li>
+            <li class="container clearfix">
+                <div class="enter-no pull-left">1</div>
+                <div class="entert-img pull-left"><img class="img-responsive" src="img/testimg.jpg"></div>
+                <div class="entert-name pull-left">
+                    <p>钢琴大师</p>
+                    <p>试试你的手指够不够灵活!</p>
+                </div>
+                <div class="entert-button pull-right">
+                    <div>进入</div>
+                </div>
+            </li>
+            <li class="container clearfix">
+                <div class="enter-no pull-left">1</div>
+                <div class="entert-img pull-left"><img class="img-responsive" src="img/testimg.jpg"></div>
+                <div class="entert-name pull-left">
+                    <p>钢琴大师</p>
+                    <p>试试你的手指够不够灵活!</p>
+                </div>
+                <div class="entert-button pull-right">
+                    <div>进入</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

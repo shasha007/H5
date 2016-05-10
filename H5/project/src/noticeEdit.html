@@ -1,0 +1,13 @@
+<!--编辑公告-->
+<div class="w-editTitle">
+	<input type="text" ng-model="title" ng-class="{textalign:bool}" ng-focus="alignM()" ng-blur="alignL()"/>
+</div>
+<div class="w-editContent">
+	<!--<div><textarea onkeyup="checkWord(this)" id="text"></textarea></div>-->
+	<div id="text" contenteditable="true" onkeyup="checkWord(this)"></div>
+	<p>
+		<img src="img/upload.png" onclick="uploadImg()">
+		<span><em id="wordNum">0</em><i>/</i>3000</span>
+		<input type="file" onchange="uploadImg(this)"/>
+	</p>
+</div>

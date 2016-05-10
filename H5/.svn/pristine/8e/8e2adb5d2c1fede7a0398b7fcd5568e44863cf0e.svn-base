@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="pu">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="bower_components/Swiper/dist/css/swiper.min.css" rel="stylesheet">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="bower_components/ng-infinite-scroll.min.js"> </script>
+    <script src="bower_components/Swiper/dist/js/swiper.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="view-div" ng-view>
+
+</div>
+</body>
+</html>

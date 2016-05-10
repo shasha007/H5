@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>实名申诉</title>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<input id="btnshow" type="button" value="提交" onclick="showdiv();"/>
+	<div id="L-bg"></div>
+	<div id="L-show">你的实名申诉已提交，我们将在24小时内进行处理，请耐心等待.
+	<br /><br />
+	<hr />
+	<input id="L-btnclose" type="button" value="确定" onclick="showdiv2();"/>
+	</div>
+	<div id="L-realName">
+		<div id="L-studentCard"><a href=""><font size="2px">&nbsp;&nbsp;学生证</font></a></div>
+		<div id="L-personInformation"><a href=""><font size="2px">&nbsp;&nbsp;编辑个人信息</font></a></div>
+	</div>
+</body>
+<script>
+	function showdiv() { 
+	document.getElementById("L-bg").style.display ="block";
+	document.getElementById("L-show").style.display ="block";
+	}
+	function showdiv2() {
+	document.getElementById("L-bg").style.display ="block";
+	document.getElementById("L-show").style.display ="block";
+	document.getElementById("L-realName").style.display ="block";
+	 }
+</script>
+</html>

@@ -1,0 +1,57 @@
+{
+  "code": 1,
+  "msg": "成功",
+  "content": [
+    {
+      "tribeCode": "1",
+      "tribeNo": "1",
+      "picUrl": "img/testimg.jpg",
+      "tribeFlag": [
+        {"hobbies":"兴趣爱好"},
+        {"hobbies":"兴趣爱好1"},
+        {"hobbies":"兴趣爱好2"}
+      ],
+      "tribeName": "test111111",
+      "tribeSchool": "四川外语大学重庆南方翻译学院",
+      "tribeNum": "1111",
+      "tribePoint": "1111"
+    },
+    {
+      "tribeCode": "2",
+      "tribeNo": "2",
+      "picUrl": "img/testimg.jpg",
+      "tribeFlag": [
+        {"hobbies":"兴趣爱好"}
+      ],
+      "tribeName": "test22222",
+      "tribeSchool": "四川外语大学重庆南方翻译学院",
+      "tribeNum": "222222",
+      "tribePoint": "2222"
+    },
+    {
+      "tribeCode": "3",
+      "tribeNo": "3",
+      "picUrl": "img/testimg.jpg",
+      "tribeFlag": [
+        {"hobbies":"兴趣爱好"},
+        {"hobbies":"兴趣爱好1"}
+      ],
+      "tribeName": "test3333",
+      "tribeSchool": "四川外语大学重庆南方翻译学院",
+      "tribeNum": "3333",
+      "tribePoint": "3333"
+    },
+    {
+      "tribeCode": "4",
+      "tribeNo": "4",
+      "picUrl": "img/testimg.jpg",
+      "tribeFlag": [
+        {"hobbies":"兴趣爱好"}
+      ],
+      "tribeName": "test44444444",
+      "tribeSchool": "四川外语大学重庆南方翻译学院",
+      "tribeNum": "4444",
+      "tribePoint": "4444"
+    }
+  ]
+}

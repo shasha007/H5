@@ -1,0 +1,6 @@
+[
+  {"name":"阿1","icon":"img/photo.png","school":"学校名称1","subSchool":"学校2","sex":"boy","isFriend":"1"},
+  {"name":"阿2","icon":"img/photo.png","school":"学校名称2","subSchool":"学校3","sex":"girl","isFriend":"1"},
+  {"name":"阿3","icon":"img/photo.png","school":"学校名称3","subSchool":"学校4","sex":"boy","isFriend":"0"},
+  {"name":"阿4","icon":"img/photo.png","school":"学校名称4","subSchool":"学校5","sex":"boy","isFriend":"1"}
+]

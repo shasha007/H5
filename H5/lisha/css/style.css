@@ -1,0 +1,872 @@
+﻿/*公用样式*/
+body{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 16px;}
+/*关于PU样式Start*/
+.L-a{
+	text-decoration: none;
+	color: #cccccc;
+}
+.L-content ul li{
+	list-style: none;
+    line-height: 60px;
+/*    border-bottom: 1px solid #F3F1EE;*/
+    border-top: 1px solid #efefef;
+}
+.L-content ul li:nth-child(3){
+	border-bottom: 1px solid #F3F1EE;
+}
+.L-dom{
+    line-height: 40px;
+}
+.L-pu-image{
+	margin-top: 40px;
+}
+.L-pu-vertion{
+	margin-top: 15px;
+}
+.L-content{
+	margin-top: 60px;
+}
+.L-content ul li span {
+		margin-left: 8%;
+}
+.L-a{
+	margin-right: 8%;
+}
+.L-aboutPUtitle{
+	width: 80%;
+	margin: 10px auto;
+}
+.L-aboutPUtitle img{margin-top: 4px;float: left;}
+.L-aboutPUtitle div{
+	line-height: 20px;
+	font-size: 14px;
+	text-align: center;
+	width: 92%;
+	height: 100%;
+}
+/*关于PU样式End*/
+/*使用帮助样式Start*/
+.L-useHelptitle{
+	width: 80%;
+	margin: 10px auto;
+}
+.L-useHelptitle img{margin-top: 4px;float: left;}
+.L-useHelptitle div{
+	line-height: 20px;
+	font-size: 14px;
+	text-align: center;
+	width: 92%;
+	height: 100%;
+}
+.L-useHelp{
+    padding: 5px 0;
+    overflow: hidden;
+    background: #EFEFEF;
+}
+.L-context ul li{
+	list-style: none;
+}
+.L-dom{
+	overflow: hidden;
+}
+.L-dom p span{
+	margin-left: 5%;
+}
+.L-dom p{
+	height: 5px;
+}
+.L-dom div{
+	height: 0;
+	overflow: hidden;
+	transition: all 0.5s;
+	-webkit-transition:  all 0.5s;
+	-moz-transition:  all 0.5s;
+	background-color: #f3f1ee;
+	color: #969696;
+}
+.L-dom div p{
+	margin-left: 5%;
+}
+/*使用帮助样式End*/
+/*我的访客Start*/
+.L-touxiang {
+    width: 10%;
+    margin-bottom: 20px;
+}
+.L-myVisitors ul li div {
+    width: 88%;
+    float: right;
+    overflow: hidden;
+}
+.L-name{
+	display: block;
+    float: left;
+}
+#L-visitDate{
+	float: right;
+	margin-right: 10%;
+}
+.L-visitSchool{
+	color:darkgrey;
+	font-size: 12px;
+}
+.L-myVisitors{
+	margin-top: 20px;
+}
+.L-visitor{	
+	margin-bottom: 15px;
+}
+.L-visitListtitle div{
+	font-size: 15px;
+}
+.L-visitListtitle{
+	width: 80%;
+	margin: 10px auto;
+}
+.L-visitListtitle img{margin-top: 4px;float: left;}
+.L-visitListtitle div{
+	line-height: 20px;
+	font-size: 14px;
+	text-align: center;
+	width: 92%;
+	height: 100%;
+}
+.L-myVisitors ul li{
+	list-style: none;
+	margin-left: 40px;
+	overflow: hidden;
+}
+/*我的访客End*/
+/*实名申诉Start*/
+#L-bg{ 
+	display: none; 
+	position: absolute; 
+	top: 0%; 
+	left: 0%; 
+	width: 100%; 
+	height: 100%; 
+	background-color: black; 
+	z-index:1001; 
+	-moz-opacity: 0.7; 
+	opacity:.70; 
+	filter: alpha(opacity=70);
+	}
+#L-show{
+	display: none;
+ 	position: absolute;
+ 	top: 25%; 
+ 	left: 22%; 
+ 	width: 53%; 
+ 	padding: 8px;
+ 	border: 8px solid #E8E9F7;
+ 	background-color: white;
+ 	z-index:1002; 
+ 	overflow: auto;
+ 	border-top: 1px solid #ccc;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #eee;
+    border-bottom: 0 none;
+ 	border-bottom-left-radius:10px;
+ 	border-bottom-right-radius:10px;
+ 	border-top-left-radius: 10px;
+ 	border-top-right-radius: 10px;
+ 	}
+#L-btnclose{
+	margin-left: 80px;
+	text-decoration: none;
+	color: #000000;
+}
+#L-realName{
+	display: none;
+    position: absolute;
+    left: 200px;
+    top: 250px;
+    z-index: 1003;
+    width: 110px;
+    height: 65px;
+    background: white;
+    padding: 0px 0px 0px 0px;
+	border: 1px;
+	border-color:#888888;
+	border-radius:3px;
+	overflow:hidden;
+	border-style: solid;
+}
+#L-realName a{
+	text-decoration: none;
+	color: black;
+}
+#L-studentCard{
+	border: 1px;
+	background-color: #E8E9F7;
+	margin: 4px 4px 4px 4px;
+	border-color:#888888;
+	border-radius:3px;
+	height: 25px;
+	border-style: solid;
+}
+#L-personInformation{
+	border: 1px;
+	background-color: #E8E9F7;
+	margin: 4px 4px 4px 4px;
+	border-color:#888888;
+	border-radius:3px;
+	height: 25px;
+	border-style: solid;
+}
+/*实名申诉End*/
+/*喜欢我的好友列表Start*/
+* { margin: 0;}
+.L-freindPhoto {
+    /*display: block;*/
+    float: left;
+    width: 10%;
+}
+.L-freinds ul li div {
+    width: 90%;
+    float: right;
+    overflow: hidden;
+}
+.L-freindName{
+	display: block;
+    float: left;
+}
+#L-freindDialog{
+	float: right;
+}
+#L-addFreinds{
+	background: none;
+    padding: 2px 7px;
+    color: red;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+#L-dialog{
+	background: none;
+    padding: 2px 5px;
+    color: orange;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+.L-freindSchool{
+	color:darkgrey;
+	font-size: 12px;
+}
+.L-myFreinds{
+	margin-top: 20px;
+}
+.L-freindLikeMe{	
+	margin-bottom: 15px;
+}
+.L-freindsTitle div{
+	font-size: 15px;
+}
+.L-freindsTitle{
+	width: 80%;
+	margin: 10px auto;
+}
+.L-freindsTitle img{margin-top: 4px;float: left;}
+.L-freindsTitle div{
+	line-height: 20px;
+	font-size: 14px;
+	text-align: center;
+	width: 92%;
+	height: 100%;
+}
+.L-myFreinds ul li{
+	list-style: none;
+	margin-left: 30px;
+}
+/*喜欢我的好友列表End*/
+/*我的收藏列表Start*/
+#L-myCollectList {
+  background: #FFF;
+  /*width: 300px;*/
+  margin: 20px auto;
+  padding: 10px 30px 80px;
+  /*box-shadow: 0 3px 5px rgba(0,0,0,0.2);*/
+}
+/*p {
+  font-size: 13px;
+}*/
+#L-myCollectList input, section {
+  clear: both;
+  padding-top: 5px;
+  display: none;
+}
+#L-myCollectList label {
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+  float: left;
+  padding: 1px 10px;
+  border-top: 2px solid transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 2px solid white;
+}
+#L-label:hover {
+  cursor: pointer;
+  text-decoration:none;
+}
+#L-tab1:checked ~ #L-content1, #L-tab2:checked ~ #L-content2, #L-tab3:checked ~ #L-content3, #L-tab4:checked ~ #L-content4 {
+  display: block;
+}
+#L-myCollectList input:checked + label {
+  border-bottom-color: #FFB03D;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  color: #FFB03D;
+  text-decoration: none;
+}
+#L-img{
+	float: left;
+	margin-top: 4px;
+}
+#L-clear{
+	float: right;
+	text-decoration: none;
+	color: orange;
+}
+#L-collectName{
+	font-size: 15px;
+}
+.L-myCollectTitle{
+	width: 80%;
+	margin: 10px auto;
+}
+.L-myCollectTitle img{
+	margin-top: 4px;
+	float: left;
+	}
+#L-collect{
+	font-size: 15px;
+	line-height: 20px;
+	font-size: 14px;
+	text-align: center;
+	width: 92%;
+	height: 100%;
+}
+#L-schoolActivity{
+	float: left;
+	width: 33%;
+	display: block;
+	margin-bottom: 10px;
+	height: 116px;
+}
+*{
+	margin: 0px auto;
+	padding: 0px;
+}
+.L-scores{
+	border: 1px solid gold;
+	color: gold;
+}
+.L-goals{
+	border: 1px solid orange;
+	color: orange;
+}
+.L-bunn{
+	border: 1px solid green;
+	color:green;
+}
+.L-delete{
+	float: right;
+}
+#L-content1 ul li div span{
+	display: inline-block;
+    padding: 0px 3px;
+    border-radius: 3px;
+    margin-right: 3px;
+    font-size: 12px;
+}
+#L-content1 ul li div{
+	float: right;
+	width: 66%;
+	display: block;
+	height: 116px;
+}
+.L-activitiesName{
+	font-size: 12px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.L-tag{
+	color: #888;
+    margin-top: 2px;
+    font-size: 12px;
+}
+#L-content1 ul li{
+	list-style: none;
+	line-height: 20px;
+}
+.L-activitiesDetail{
+	margin-bottom: 10px;
+}
+/*兴趣活动*/
+#L-hobbyActivity{
+	width: 50px;
+	height: 50px;
+}
+.L-hobby{
+	width: 30%;
+	display: block;
+	float: left;
+	height: 125px;
+}
+.L-hobbyDetail{
+	width: 68%;
+	height: 125px;
+	float: right;
+}
+#L-content2 ul li span{
+	display: inline-block;
+    padding: 0px 3px;
+    border-radius: 3px;
+    margin-right: 3px;
+    font-size: 12px;
+}
+#L-content2 ul li {
+    list-style: none;
+    line-height: 20px;
+}
+/*部落*/
+.L-buluoName{
+	display: inline-block;
+    padding: 0px 3px;
+    border-radius: 3px;
+    margin-right: 3px;
+    font-size: 12px;
+    border: 1px solid orange;
+    color: orange;
+}
+
+#L-content3 ul li {
+    list-style: none;
+    line-height: 20px;
+}
+#L-buluoMember{
+	color:#ADADAD;
+    margin-top: 2px;
+    font-size: 6px;
+}
+.L-buluotag{
+	color: #888;
+    margin-top: 10px;
+    font-size: 8px;
+}
+.L-buluoDetail{
+	float: right;
+    width: 66%;
+    display: block;
+    height: 116px;
+}
+#L-buluoActivity{
+	float: left;
+    width: 33%;
+    display: block;
+    margin-bottom: 10px; 
+    height: 106px;
+}
+/*话题*/
+.L-star img{width: 6%;}
+.L-topicList{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 1px;
+}
+.L-topicList li{width: 90%;overflow: hidden;margin-bottom: 10px;background: #fff;padding: 0 5%;}
+.L-topicList li .L-info{
+	padding: 7px 0;
+	width: 100%;
+	overflow: hidden;
+}
+.L-topicPhoto{float: left;height: 37px;}
+
+.L-topicList li .L-info div{
+	float: left;
+	height: 100%;
+	margin-left: 10px;
+}
+.L-topicList li p{overflow: hidden;font-size: 14px;color: #3E3E3E;}
+.L-topicList li p span{font-size: 12px; color: #EA5504;float: left;}
+
+.L-topicList li p img{height: 15px;margin-left: 5px;}
+.L-topicList li p i{color: #888;font-size: 12px;}
+.L-topicList li .L-info button{
+	padding: 2px 5px;
+	font-size: 14px;
+	color: #EA5504;
+	border-radius:3px ;
+	border: 1px solid #EA5504;
+	background: none;
+	margin-top: 7.5px;
+	float: right;
+}
+.L-topicList .L-topicPic{
+	width: 100%;
+	overflow: hidden;
+}
+.L-topicList .L-topicPic img{
+	width: 31%;
+	float: left;
+	margin-left: 3.5%;
+}
+.L-topicList .L-topicPic img:first-child{margin-left: 0;}
+.L-topicOperat{
+	padding: 10px 0;
+	overflow: hidden;
+	width: 100%;
+}
+.L-topicOperat img:first-child{float: left;}
+.L-topicOperat img{
+	height: 18px;
+	float: right;
+}
+.L-topicOperat span{float: right;line-height: 18px;color: #ccc;font-size: 12px;margin-left: 5px;}
+.L-topicOperat .L-commend{margin-left: 10px;}
+.L-topicList .L-topicText{
+	margin:5px 0;
+}
+#L-content4{
+	background-color: #F3F1EE;
+}
+i,em{font-style: normal;}
+/*我的收藏列表End*/
+/*我的话题列表Start*/
+.L-myTopicTitle{
+	line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+	height: 40px;
+	background: #fff;
+	position: relative;
+}
+#L-backimg{
+	height: 30%;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+/*我的话题列表End*/
+/*所有评论列表Start*/
+#L-commendShow{
+	color: red;
+	font-size:larger;
+	background-color: white;
+	border: none;
+}
+#L-lastcommment{
+	color: darkgrey;
+}
+#L-commmentdetail{
+	color: darkgray;
+	font-size: 12px;
+}
+#L-commendMy{
+	float: left;
+}
+/*所有评论列表End*/
+/*学分明细*/
+.L-integrity-header {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #d36d07;
+}
+
+.L-integrity-header p:nth-child(2) {
+    width: auto;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 42px;
+}
+
+.L-integrity-header p:nth-child(3) {
+    font-size: 12px;
+    color: #f3c7bc;
+}
+.L-integrity-list a{
+    margin: 0 -5px;
+    display: block;
+    color: #333;
+}
+.L-integrity-event-img{
+    padding: 0 5px;
+}
+.L-integrity-event-name{
+    padding: 0px 5px;
+    font-size: 16px;
+    overflow: hidden;
+}
+.L-integrity-event-point{
+    padding: 0px 5px;
+    text-align: right;
+    color:#ccc;
+    font-size: 14px;
+}
+.L-integrity-list ul{
+    background-color: #fff;
+}
+.L-integrity-list ul li{
+    padding: 5px 0px;
+    height: 60px;
+    border-bottom: 1px solid #eee;
+}
+.L-color-eee{
+    color: #eee;
+}
+.L-integrity-no-sign{
+    color: #ea5504;
+}
+.L-integrity-is-sign{
+    color: #f69d08;
+}
+.L-integrity-num{
+    background-color: #fff;
+}
+.L-integrity-pic{
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    float: left;
+}
+.L-integrity-list div{
+    margin-top: 5px;
+}
+.L-integrity-school p{
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.L-integrity-event-point p{
+    padding-top: 10px;
+}
+#L-score{
+	font-size: 12px;
+}
+.L-img-responsive{
+	float: left;
+	width:100%;
+	line-height: 20px;
+	width: 50px;
+	height: 50px;
+}
+.L-integrity-event-point{
+	float: right;
+	font-size: 20px;
+	color: red;
+	display: inline-block;
+	line-height: 1px;
+}
+.L-integrity-school{
+	float: left;
+	margin-left: 10px;
+}
+#L-score-integrity{
+	color: #000000;
+	font-size: 12px;
+}
+#L-integrity-date{
+	color: darkgray;
+}
+/*奖品明细*/
+
+.L-to-event{
+	/*width: 90%;*/
+}
+.L-award-list ul li{
+	/*border-right:1px dashed #FFF;*/
+	list-style: none;
+}
+.L-img-award{
+	float: left;
+	width:100%;
+	line-height: 20px;
+	width: 50px;
+	height: 50px;
+}
+#L-awrdName {
+    font-size: 12px;
+    color: darkgray;
+}
+.L-award-money{
+	float: right;
+	width: 10%;
+	display: block;
+	border-left:1px dashed #ccc; 
+	height:90px; 
+	text-align: center;
+	width:60px; 
+	position:relative; 
+
+}
+#L-awardDetail{
+	display: block;
+	float: left;
+	margin-left: 20px;
+}
+.L-award-expired{
+	/*display: block;
+	float: left;*/
+	color: darkgray;
+	font-size: 12px;
+	margin-top: 10px;
+}
+#L-awardDat{
+	widows: 200px;
+}
+.L-awardKfc{
+	width: 90%;
+	display: inline-block;
+}
+#L-awardQuan{
+	font-size: 14px;
+	margin-left: 60px;
+	margin-top: 5px;
+}
+.L-award-pic{
+	margin-top: 10px;
+	height: 50px;
+}
+#L-awardM{
+	margin-top: 30px;
+	margin-left: 10px;
+	position: absolute; 
+	z-index: 1; 
+	left: 0; 
+	bottom:0; 
+	width: 100%; 
+	/*color: #fff; 
+	background: white; */
+	/*height: 54px;*/ 
+	line-height: 90px; 
+	overflow: hidden;
+}
+.L-to-event{
+    /*font-size: 14px;*/
+    /*text-align: center;*/
+    /*width: 90%;*/
+	/*height: 40px;*/
+	background: #fff;
+	width: 90%;
+	border-radius: 4px;
+	height: 90px;
+	border-left-style: solid; 
+	border-left-color: orangered;
+	border-left-width: 4px;
+	margin-top: 20px;
+}
+#L-awardExpeirdquan{
+	color: darkgray;
+	font-size: 12px;
+	margin-top: 15px;
+	text-align: center;
+}
+#L-img-expired{
+	float: right;
+	width:100%;
+	line-height: 40px;
+	width: 60px;
+	height: 60px;
+}
+/*活动积分*/
+.L-activity-header {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: orange;
+}
+.L-activity-header p:nth-child(2) {
+    width: auto;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 42px;
+}
+
+.L-activity-header p:nth-child(3) {
+    font-size: 12px;
+    color: #fde7d1;
+}
+/*奖品详情*/
+.L-prizeTitle{
+	color: #bf4c26;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+.L-prizeDetails{
+	margin-top: 20px;
+	margin-left: 40px;
+	color: #cccccc;
+}
+.L-prizeEnd{
+	margin-top: 20px;
+}
+.L-prizeEnd span:nth-child(1){
+	margin-top: 20px;
+	margin-left: 40px;
+	color: #cccccc;
+}
+.L-prizeEnd span:nth-child(2){
+	margin-top: 20px;
+	/*margin-left: 40px;*/
+	color: #f18e58;
+}
+.L-prizeDetails p{
+	margin-top: 20px;
+}
+.L-prizeContents{
+	margin-top: 40px;
+	margin-left: 40px;
+}
+.L-prizeTel input{
+	margin-top: 10px;
+	width:250px;
+	height: 30px;
+}
+.L-prizeAddr input{
+	margin-top: 10px;
+	width:250px;
+	height: 60px;
+}
+.L-prizeSubmit input{
+	margin-top: 30px;
+	margin-left: 40px;
+	background-color: #ea5504;
+	width: 250px;
+	height: 40px;
+	border-radius: 8px;
+	border-color: #ea5504;
+	color: #ffffff;
+	font-size: 14px;
+}
+#L-prizeNotice{
+	color: #585858;
+}
+#L-prizereal{
+	display: none;
+    position: absolute;
+    left: 200px;
+    top: 450px;
+    z-index: 1003;
+    width: 110px;
+    height: 65px;
+    background: white;
+    padding: 0px;
+	border: 1px;
+	border-color:#888888;
+	border-radius:3px;
+	overflow:hidden;
+	border-style: solid;
+}
+#L-prizereal a{
+	text-decoration: none;
+	color: black;
+}

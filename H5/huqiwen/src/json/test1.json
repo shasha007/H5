@@ -1,0 +1,60 @@
+{
+  "code": 1,
+  "msg": "成功",
+  "content": [
+    {
+      "tribeId": "1",
+      "tribeName": "22222222222",
+      "schoolName": "南京理工大学",
+      "picUrl": "img/testimg.jpg"
+    },
+    {
+      "tribeId": "1",
+      "tribeName": "1111",
+      "schoolName": "南京理工大学",
+      "picUrl": "img/testimg.jpg"
+    },
+    {
+      "tribeId": "1",
+      "tribeName": "1111",
+      "schoolName": "南京理工大学",
+      "picUrl": "img/testimg.jpg"
+    },
+    {
+      "tribeId": "1",
+      "tribeName": "1111",
+      "schoolName": "南京理工大学",
+      "picUrl": "img/testimg.jpg"
+    },
+    {
+      "tribeId": "1",
+      "tribeName": "1111",
+      "schoolName": "南京理工大学",
+      "picUrl": "img/testimg.jpg"
+    },
+    {
+      "tribeId": "1",
+      "tribeName": "1111",
+      "schoolName": "南京理工大学",
+      "picUrl": "img/testimg.jpg"
+    },
+    {
+      "tribeId": "1",
+      "tribeName": "1111",
+      "schoolName": "南京理工大学",
+      "picUrl": "img/testimg.jpg"
+    },
+    {
+      "tribeId": "1",
+      "tribeName": "1111",
+      "schoolName": "南京理工大学",
+      "picUrl": "img/testimg.jpg"
+    },
+    {
+      "tribeId": "1",
+      "tribeName": "1111",
+      "schoolName": "南京理工大学",
+      "picUrl": "img/testimg.jpg"
+    }
+  ]
+}

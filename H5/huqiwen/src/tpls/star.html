@@ -1,0 +1,44 @@
+
+<div class="swiper-container star-lunbo">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide" ng-repeat="starimg in star.starimgs">
+            <img src="{{starimg.img}}" style="width: 100%">
+        </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+</div>
+<div class="star-body">
+    <ul infinite-scroll='star.nextPage()' infinite-scroll-disabled='star.busy' infinite-scroll-distance='1'>
+        <li ng-repeat="item in star.items">
+            <div class="container">
+                <!--跳转个人主页-->
+                <img class="img-responsive jiaobiao" src="img/jiaobiao.png">
+
+                <div class="star-person" onclick="" data-userid="">
+                    <img class="img-responsive " src="{{item.picUrl}}">
+                </div>
+
+                <div class="star-school" onclick="" data-userid="">
+                    <p>{{item.nickName}}</p>
+
+                    <p class="pull-left">{{item.schoolName}}</p>
+
+                    <p class="pull-right text-right">{{item.grade}}级</p>
+                </div>
+                <div class="add-friend-star isadd" ng-if="item.isFriend=='1'">已添加</div>
+                <div class="add-friend-star" ng-if="item.isFriend=='0'">+好友</div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script>
+    var mySwiper = new Swiper('.star-lunbo', {
+        direction: 'horizontal',
+        autoplay: 5000,
+//        // 如果需要分页器
+        pagination: '.swiper-pagination'
+
+    })
+</script>

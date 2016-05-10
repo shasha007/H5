@@ -1,0 +1,47 @@
+<div class="swiper-container tribe-lunbo">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide" ng-repeat="tribeimg in tribe.tribeimgs">
+            <img src="{{tribeimg.img}}" style="width: 100%">
+        </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<div class="tribe-list container">
+    <ol class="yiku" infinite-scroll='tribe.nextPage()' infinite-scroll-disabled='tribe.busy' infinite-scroll-distance='1'>
+            <li class="clearfix go-tribe" data-tribeid="{{tribe.tribeCode}}" ng-repeat="tribe in tribe.items">
+                <!--跳转部落之心-->
+                <a>
+                    <div class="tribe-list-l pull-left tribe-no{{tribe.tribeNo}}">
+                        NO.<span class="big">{{tribe.tribeNo}}</span>
+                    </div>
+                    <div class="tribe-list-c pull-left">
+                        <img src="{{tribe.picUrl}}">
+                    </div>
+                    <div class="tribe-list-c2 pull-left">
+                        <div class="clearfix">
+                        <p class="tribe-list-hobbies" ng-repeat="hobbies in tribe.tribeFlag">{{hobbies.hobbies}}</p>
+                        </div>
+                        <p class="tribe-list-name">{{tribe.tribeName}}</p>
+                        <p class="tribe-list-school"><span class="glyphicon glyphicon-home">&emsp13;</span>{{tribe.tribeSchool}}
+                        </p>
+                        <p class="tribe-list-school">
+                            <span class="glyphicon glyphicon-user">&emsp13;</span>{{tribe.tribeNum}}</p>
+                    </div>
+                    <div class="tribe-list-r  pull-right">
+                        <span>{{tribe.tribePoint}}分</span></div>
+                </a>
+            </li>
+    </ol>
+</div>
+<script>
+    var mySwiper = new Swiper('.tribe-lunbo', {
+        direction: 'horizontal',
+        autoplay: 5000,
+//        // 如果需要分页器
+        pagination: '.swiper-pagination'
+
+    })
+</script>

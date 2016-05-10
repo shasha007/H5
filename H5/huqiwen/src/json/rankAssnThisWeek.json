@@ -1,0 +1,103 @@
+{
+  "code": 1,
+  "content": [
+    {
+      "departId": 1,
+      "departName": "学生部门",
+      "details": [
+        {
+          "icon": "img.jpg",
+          "id": 1,
+          "name": "名称"
+        },
+        {
+          "icon": "img.jpg",
+          "id": 2,
+          "name": "名称1"
+        },
+        {
+          "icon": "img.jpg",
+          "id": 3,
+          "name": "名称"
+        },
+        {
+          "icon": "img.jpg",
+          "id": 4,
+          "name": "测试"
+        },
+        {
+          "icon": "img.jpg",
+          "id": 5,
+          "name": "测试"
+        },
+        {
+          "icon": "img.jpg",
+          "id": 6,
+          "name": "测试"
+        }
+      ],
+      "showName": "学生部门本周排行"
+    },
+    {
+      "departId": 2,
+      "departName": "团支部",
+      "details": [],
+      "showName": "团支部本周排行"
+    },
+    {
+      "departId": 3,
+      "departName": "学生社团",
+      "details": [
+        {
+          "icon": "img.jpg",
+          "id": 8,
+          "name": "测试"
+        }
+      ],
+      "showName": "社团本周排行-啊"
+    },
+    {
+      "departId": 3,
+      "departName": "学生社团",
+      "details": [
+        {
+          "icon": "img.jpg",
+          "id": 7,
+          "name": "测试"
+        }
+      ],
+      "showName": "社团本周排行-d"
+    },
+    {
+      "departId": 3,
+      "departName": "学生社团",
+      "details": [
+        {
+          "icon": "img.jpg",
+          "id": 9,
+          "name": "测试"
+        }
+      ],
+      "showName": "社团本周排行-dc"
+    },
+    {
+      "departId": 3,
+      "departName": "学生社团",
+      "details": [
+        {
+          "icon": "img.jpg",
+          "id": 10,
+          "name": "测试"
+        }
+      ],
+      "showName": "社团本周排行-ff"
+    },
+    {
+      "departId": 3,
+      "departName": "学生社团",
+      "details": [],
+      "showName": "社团本周排行-ee"
+    }
+  ],
+  "msg": "成功"
+}
